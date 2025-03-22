@@ -1,0 +1,81 @@
+import { Card, CardContent } from "~/components/ui/card"
+import { Button } from "./ui/button"
+
+export function VisionSection() {
+  return (
+    <section className="py-16 md:py-24 bg-white">
+      <div className="container mx-auto px-4">
+        {/* Section header */}
+        <div className="mb-12">
+          <div className="flex items-center mb-4">
+            <div className="h-1 w-12 bg-red-500 mr-4"></div>
+            <p className="text-slate-700 text-lg">Vision For The Future</p>
+          </div>
+
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
+            Why Choose Unicode Systems?
+          </h2>
+
+          <p className="text-slate-600 max-w-4xl text-lg">
+            At Unicode Systems, we specialize in bridging the gap between technology and business. Our mission is to
+            provide tailored solutions that enhance your operations and fuel your growth. Join us to transform your
+            business with our expert guidance and innovative strategies.
+          </p>
+        </div>
+
+        {/* Features grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-12">
+          <div className="lg:col-span-1">
+            <img
+              src="/placeholder.svg?height=400&width=400"
+              alt="Business professionals collaborating"
+              width={400}
+              height={400}
+              className="rounded-lg shadow-lg"
+            />
+          </div>
+
+          <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Card className="border-t-4 border-t-red-500">
+              <CardContent className="pt-6">
+                <h3 className="text-xl font-bold mb-3 text-slate-800">Dedicated Support</h3>
+                <p className="text-slate-600">
+                  At every stage of your journey, our team provides personalized support and expertise to ensure your
+                  success.
+                </p>
+                <div className="mt-6 h-1 w-full bg-red-500"></div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-t-4 border-t-red-500">
+              <CardContent className="pt-6">
+                <h3 className="text-xl font-bold mb-3 text-slate-800">Expert Advisors</h3>
+                <p className="text-slate-600">
+                  Gain access to industry leaders who offer customized solutions in IT, marketing, finance, and more to
+                  keep you ahead of the curve.
+                </p>
+                <div className="mt-6 h-1 w-full bg-red-500"></div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-t-4 border-t-red-500">
+              <CardContent className="pt-6">
+                <h3 className="text-xl font-bold mb-3 text-slate-800">Market Research</h3>
+                <p className="text-slate-600">
+                  Our in-depth market research and insights equip you with the knowledge to seize opportunities and make
+                  informed decisions.
+                </p>
+                <div className="mt-6 h-1 w-full bg-red-500"></div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
+        <div className="flex justify-end">
+          <Button className="bg-red-500 hover:bg-red-600 text-white font-medium px-8 py-2 h-auto">ABOUT US</Button>
+        </div>
+      </div>
+    </section>
+  )
+}
+
