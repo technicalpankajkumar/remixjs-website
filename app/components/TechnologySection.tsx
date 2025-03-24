@@ -49,18 +49,56 @@ export function TechnologySection() {
           <h3 className="text-2xl font-bold text-slate-800 mb-8 text-center">Technologies We Work With</h3>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-            {[...Array(6)].map((_, index) => (
-              <div key={index} className="flex justify-center">
                 <div className="rounded w-24 py-1 flex items-center justify-center">
                   <img
-                    src={`https://appexchange.salesforce.com/partners/servlet/servlet.FileDownload?file=00P3A00000kLOtPUAW`}
-                    alt={`Technology ${index + 1}`}
+                    src={`https://techpile.in/Content/img/logo.png`}
+                    alt={`Technology 1`}
                     width={100}
                     height={60}
                   />
                 </div>
+              <div className="rounded w-24 py-1 flex items-center justify-center">
+                <img
+                  src={`https://www.softros.com/img/softros-logo.png`}
+                  alt={`Technology 2`}
+                  width={100}
+                  height={60}
+                />
               </div>
-            ))}
+              <div className="rounded w-24 py-1 flex items-center justify-center">
+                Jemtech
+                <img
+                  src={`https://www.jemtech.co.uk/wp-content/themes/jemtech/images/jemtech-logo-white-new.svg`}
+                  alt={`Technology 3`}
+                  width={100}
+                  height={60}
+                />
+              </div>
+              <div className="rounded w-24 py-1 flex items-center justify-center">
+                  <img
+                    src={`https://techpile.in/Content/img/logo.png`}
+                    alt={`Technology 1`}
+                    width={100}
+                    height={60}
+                  />
+                </div>
+              <div className="rounded w-24 py-1 flex items-center justify-center">
+                <img
+                  src={`https://www.softros.com/img/softros-logo.png`}
+                  alt={`Technology 2`}
+                  width={100}
+                  height={60}
+                />
+              </div>
+              <div className="rounded w-24 py-1 flex items-center justify-center">
+                Jemtech
+                <img
+                  src={`https://www.jemtech.co.uk/wp-content/themes/jemtech/images/jemtech-logo-white-new.svg`}
+                  alt={`Technology 3`}
+                  width={100}
+                  height={60}
+                />
+              </div>
           </div>
         </div>
       </div>

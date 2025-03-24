@@ -28,14 +28,14 @@ export function Footer() {
 
             <div className="mb-4">
               <span className="text-2xl font-bold">
-                <span className="text-blue-400">UNI</span>
-                <span className="text-red-500">CODE</span>
+                <span className="text-blue-400">SG</span>
+                <span className="text-red-500">TECH</span>
               </span>
-              <span className="block text-xs tracking-widest text-gray-400">SYSTEMS</span>
+              <span className="block text-xs tracking-widest text-gray-400">Technology</span>
             </div>
 
             <p className="text-sm text-gray-300 leading-relaxed">
-              Unicode Systems is one of the premier offshore IT Business Consulting companies delivering cutting-edge
+              SG Tech Technology is one of the premier offshore IT Business Consulting companies delivering cutting-edge
               solutions to clients across the globe.
             </p>
           </div>
@@ -109,9 +109,9 @@ export function Footer() {
 
         {/* Bottom copyright and social media section */}
         <div className="pt-6 border-t border-slate-700 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-sm text-gray-400">© 2025, Unicode systems All rights reserved.</div>
+          <div className="text-sm text-gray-400">© 2025, SG Tech Technology All rights reserved.</div>
 
-          <div className="text-sm text-gray-400">info@unicodesystems.in | 2nd Floor Agile Heights, Lucknow</div>
+          <div className="text-sm text-gray-400">sgtechtechnology@gmail.com | Kerakat Jaunpur Uttar Pradesh</div>
 
           <div className="flex space-x-2">
             <a href="#" className="bg-white p-2 rounded-md hover:bg-gray-200 transition-colors">

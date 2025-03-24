@@ -18,19 +18,19 @@ export function ServicesSection() {
       icon: <FileText className="h-16 w-16 text-slate-700" />,
       title: "Reg-Tech Consulting",
       description:
-        "At Unicode Systems, we specialize in RegTech solutions that simplify and streamline compliance processes",
+        "At SG Tech Technology, we specialize in RegTech solutions that simplify and streamline compliance processes",
     },
     {
       icon: <BookOpen className="h-16 w-16 text-slate-700" />,
       title: "Ed-Tech Consulting",
       description:
-        "At Unicode Systems, we're at the forefront of this transformation, offering innovative Ed-Tech solutions",
+        "At SG Tech Technology, we're at the forefront of this transformation, offering innovative Ed-Tech solutions",
     },
     {
       icon: <DollarSign className="h-16 w-16 text-slate-700" />,
       title: "Fin-Tech Consulting",
       description:
-        "At Unicode Systems, we are driving the future of finance with our cutting-edge Fin-Tech solutions(Financial Services)",
+        "At SG Tech Technology, we are driving the future of finance with our cutting-edge Fin-Tech solutions(Financial Services)",
     },
   ]
 

@@ -11,7 +11,7 @@ export function HeroSection() {
         <div className="">
           <div className="flex items-center mb-4">
             <div className="h-1 w-12 bg-red-500 mr-4"></div>
-            <p className="text-white text-lg">Welcome to Unicode Systems</p>
+            <p className="text-white text-lg">Welcome to SG Tech Technology</p>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8">
