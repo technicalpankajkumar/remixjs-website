@@ -4,10 +4,13 @@ import { Outlet } from "@remix-run/react";
 import { HeroSection } from "~/components/HeroSection";
 import { VisionSection } from "~/components/OurVision";
 import { ServicesSection } from "~/components/OurService";
+import { StrategySection } from "~/components/OurStrategySection";
+import { ClientTestimonialSection } from "~/components/ClientTestimonialSection";
+import { TechnologySection } from "~/components/TechnologySection";
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "home" },
+    { name: "SGTech Technology", content: "SG Tech Technology Private Limited" },
   ];
 };
 
@@ -17,6 +20,9 @@ export default function Index() {
        <HeroSection/>
        <VisionSection/>
        <ServicesSection/>
+       <StrategySection/>
+       <ClientTestimonialSection/>
+       <TechnologySection/>
     </div>
   );
 }

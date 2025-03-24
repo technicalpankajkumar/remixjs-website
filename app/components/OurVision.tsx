@@ -24,13 +24,11 @@ export function VisionSection() {
         </div>
 
         {/* Features grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-12 place-items-center">
           <div className="lg:col-span-1">
             <img
-              src="/placeholder.svg?height=400&width=400"
+              src="https://img.freepik.com/free-photo/people-taking-part-business-event_23-2149346666.jpg?t=st=1742651077~exp=1742654677~hmac=05298b57b011df6c2c114ba9726dcfc437958b7edd00122682ea2e22b3446dac&w=996"
               alt="Business professionals collaborating"
-              width={400}
-              height={400}
               className="rounded-lg shadow-lg"
             />
           </div>
