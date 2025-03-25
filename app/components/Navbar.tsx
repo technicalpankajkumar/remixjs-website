@@ -57,7 +57,16 @@ const components: { title: string; href: string; description: string }[] = [
 const navLinks = [
   { name: "Home", href: "/", icon: Home },
   { name: "About", href: "/about", icon: Info },
-  { name: "Services", href: "/services", icon: Settings },
+  { name: "Services", 
+    href: "#service", 
+    icon: Settings,
+    dropdown: [
+      { name: "Application", href: "/applicationservice" },
+      { name: "Automation", href: "/automationservice" },
+      { name: "Development", href: "/developmentservice" },
+      { name: "Q&A", href: "/qaservice" },
+    ],
+  },
   {
     name: "Industries",
     href: "#industries",
