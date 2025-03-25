@@ -135,29 +135,28 @@ export function Navbar() {
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
+                  <Link
+                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gray-900 bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                    to="/applicationservice"
                   >
                     {/* <Icons.logo className="h-6 w-6" /> */}
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      shadcn/ui
+                      Our Services
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components built with Radix UI and
-                      Tailwind CSS.
+                    In today's competitive landscape, businesses need innovative solutions to stay ahead.
                     </p>
-                  </a>
+                  </Link>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/docs" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
+              <ListItem href="/automationservice" title="Our Automation">
+                Our Automation service to help automate your business with custom softwares.
               </ListItem>
-              <ListItem href="/docs/installation" title="Installation">
-                How to install dependencies and structure your app.
+              <ListItem href="/developmentservice" title="Our Development">
+              Our Development service to help create Custom software as per your need and requirement.
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Typography">
-                Styles for headings, paragraphs, lists...etc
+              <ListItem href="/supportservice" title="Our Support">
+                Our Support Service helps to you 24/7 with Technical or Software supports.
               </ListItem>
             </ul>
           </NavigationMenuContent>
@@ -194,7 +193,7 @@ export function Navbar() {
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
-    <Button>CONTACT US</Button>
+    <Link to={'/contactus'} className="flex items-center bg-gray-800 bg-gradient-to-from px-2 py-1 md:py-2 rounded-lg text-white">CONTACT US</Link>
     </div>
 
      {/* Mobile Menu Button */}
