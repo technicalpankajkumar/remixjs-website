@@ -119,10 +119,10 @@ const Index = () => {
                                     <AccordionTrigger className="px-4 py-3">
                                         <div className="flex items-center">
                                             <div className="mr-3 text-slate-700">{service.icon}</div>
-                                            <span>{service.title}</span>
+                                            <span className="text-slate-950">{service.title}</span>
                                         </div>
                                     </AccordionTrigger>
-                                    <AccordionContent className="px-4 pb-4 pt-1">{service.description}</AccordionContent>
+                                    <AccordionContent className="px-4 pb-4 pt-1 text-slate-950">{service.description}</AccordionContent>
                                 </AccordionItem>
                             ))}
                         </Accordion>

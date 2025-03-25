@@ -79,7 +79,7 @@ const navLinks = [
     ],
   },
   { name: "Technology", href: "/technology", icon: Cpu },
-  { name: "Contact", href: "/contact", icon: Phone },
+  { name: "Contact", href: "/contactus", icon: Phone },
 ]
 export function Navbar() {
   const [isScrolled, setIsScrolled] = React.useState(false)
