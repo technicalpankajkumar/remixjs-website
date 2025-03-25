@@ -14,18 +14,14 @@ const MainLayout = () => {
       <p className="flex gap-2 items-center"> <Mail size={15}/> <span>sgtechtechnology@gmail.com</span></p>
       <p className="flex gap-2 items-center"> <Locate size={15}/> <span>Kerakat Jaunpur Uttar Pradesh</span></p>
     </div>
-    <div className="bg-white flex flex-wrap justify-around p-2 sticky top-0 z-50">
-          <div className="mb-4">
-              <span className="text-2xl font-bold">
-                <span className="text-blue-400">SG</span>
-                <span className="text-red-500">TECH</span>
-              </span>
-              <span className="block text-xs tracking-widest text-gray-400">Technology</span>
-            </div>
-      <div className="flex gap-2 items-center">
+    <div className="bg-white flex flex-wrap justify-between items-center lg:justify-around p-2 md:p-4 sticky top-0 z-50">
+        <span className="text-2xl font-bold">
+          <span className="text-blue-400">SG</span>
+          <span className="text-red-500 ms-1">TECH</span>
+          <span className="ms-1 text-gray-400">Technology</span>
+        </span>
+        {/* navigation */}
         <Navbar />
-        <Button>CONTACT US</Button>
-      </div>
     </div>
     <main className="flex-grow ">
       <Outlet />

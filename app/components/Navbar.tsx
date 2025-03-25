@@ -10,6 +10,11 @@ import {
 } from "~/components/ui/navigation-menu"
 import { Link } from "@remix-run/react"
 import { cn } from "~/lib/utils"
+import { Button } from "./ui/button"
+import { Sheet, SheetContent, SheetTrigger } from "~/components/ui/sheet"
+import { Menu, X, ChevronDown, Home, Info, Settings, Briefcase, Cpu, Phone } from "lucide-react"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "~/components/ui/dropdown-menu"
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "~/components/ui/collapsible"
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -49,8 +54,65 @@ const components: { title: string; href: string; description: string }[] = [
   },
 ]
 
+const navLinks = [
+  { name: "Home", href: "/", icon: Home },
+  { name: "About", href: "/about", icon: Info },
+  { name: "Services", href: "/services", icon: Settings },
+  {
+    name: "Industries",
+    href: "#industries",
+    icon: Briefcase,
+    dropdown: [
+      { name: "E-commerce", href: "/industries/ecommerce" },
+      { name: "Healthcare", href: "/industries/healthcare" },
+      { name: "Fintech", href: "/industries/fintech" },
+      { name: "EdTech", href: "/industries/edtech" },
+    ],
+  },
+  { name: "Technology", href: "/technology", icon: Cpu },
+  { name: "Contact", href: "/contact", icon: Phone },
+]
 export function Navbar() {
+  const [isScrolled, setIsScrolled] = React.useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
+  const [openSubmenus, setOpenSubmenus] = React.useState<Record<string, boolean>>({})
+  const [activeLink, setActiveLink] = React.useState<string>("/")
+  const mobileMenuRef = React.useRef<HTMLDivElement>(null)
+
+  // Handle scroll effect
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10)
+    }
+
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
+  // Set active link based on current path
+  React.useEffect(() => {
+    if (typeof window !== "undefined") {
+      setActiveLink(window.location.pathname)
+    }
+  }, [])
+
+  // Toggle submenu without closing the sheet
+  const toggleSubmenu = (name: string) => {
+    setOpenSubmenus((prev) => ({
+      ...prev,
+      [name]: !prev[name],
+    }))
+  }
+
+  // Handle link click - close the mobile menu
+  const handleLinkClick = (href: string) => {
+    setActiveLink(href)
+    setIsMobileMenuOpen(false) // Close the drawer when a link is clicked
+  }
+
   return (
+    <>
+    <div className="hidden lg:flex items-center space-x-8">
     <NavigationMenu>
       <NavigationMenuList className="flex flex-wrap">
       <NavigationMenuItem>
@@ -132,6 +194,129 @@ export function Navbar() {
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
+    <Button>CONTACT US</Button>
+    </div>
+
+     {/* Mobile Menu Button */}
+     <div className="lg:hidden" ref={mobileMenuRef}>
+            <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+              <SheetTrigger asChild>
+                <Button
+                  variant="destructive"
+                  size="icon"
+                  className={isScrolled ? "text-slate-800" : "text-white"}
+                  aria-label="Menu"
+                >
+                  <Menu className="h-6 w-6" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[80%] sm:w-[350px] p-0" >
+                <div className="flex flex-col h-full">
+                  <div className="flex items-center justify-between p-4 border-b">
+                    <Link to="/" className="flex items-center">
+                    <span className="text-2xl font-bold">
+                      <span className="text-blue-400">SG</span>
+                      <span className="text-red-500 ms-1">TECH</span>
+                      <span className="ms-1 text-gray-400">Technology</span>
+                    </span>
+                    </Link>
+                  </div>
+
+                  <div className="flex-1 overflow-auto py-4">
+                    <nav className="flex flex-col">
+                      {navLinks.map((link, index) => (
+                        <div key={index} className="border-b border-gray-100 last:border-b-0">
+                          {link.dropdown ? (
+                            <Collapsible
+                              open={openSubmenus[link.name] || false}
+                              onOpenChange={(open) => {
+                                setOpenSubmenus((prev) => ({
+                                  ...prev,
+                                  [link.name]: open,
+                                }))
+                              }}
+                            >
+                              <div
+                                className={`flex items-center px-4 py-3 cursor-pointer ${
+                                  activeLink.startsWith(link.href) || openSubmenus[link.name] ? "bg-gray-50" : ""
+                                } hover:bg-gray-50`}
+                                onClick={(e) => {
+                                  e.stopPropagation()
+                                  toggleSubmenu(link.name)
+                                }}
+                              >
+                                <link.icon className="h-5 w-5 text-slate-500 mr-3" />
+                                <div className="font-medium text-slate-800">{link.name}</div>
+                                <CollapsibleTrigger asChild>
+                                  <Button
+                                    variant="ghost"
+                                    size="sm"
+                                    className="p-1 ml-auto"
+                                    onClick={(e) => {
+                                      e.stopPropagation() // Prevent parent click handler
+                                      toggleSubmenu(link.name)
+                                    }}
+                                  >
+                                    <ChevronDown
+                                      className={`h-5 w-5 text-slate-500 transition-transform duration-300 ${
+                                        openSubmenus[link.name] ? "rotate-180" : ""
+                                      }`}
+                                    />
+                                  </Button>
+                                </CollapsibleTrigger>
+                              </div>
+                              <CollapsibleContent className="overflow-hidden transition-all duration-300 ease-in-out">
+                                <div className="pl-12 pr-4 py-2 space-y-1 bg-gray-50">
+                                  {link.dropdown.map((item, idx) => (
+                                    <Link
+                                      key={idx}
+                                      to={item.href}
+                                      className={`block py-2.5 px-3 text-sm rounded-md transition-colors ${
+                                        activeLink === item.href
+                                          ? "bg-red-50 text-red-500 font-medium"
+                                          : "text-slate-600 hover:bg-gray-100 hover:text-red-500"
+                                      }`}
+                                      onClick={() => handleLinkClick(item.href)}
+                                    >
+                                      {item.name}
+                                    </Link>
+                                  ))}
+                                </div>
+                              </CollapsibleContent>
+                            </Collapsible>
+                          ) : (
+                            <Link
+                              to={link.href}
+                              className={`flex items-center px-4 py-3 font-medium transition-colors ${
+                                activeLink === link.href
+                                  ? "bg-gray-50 text-red-500"
+                                  : "text-slate-800 hover:bg-gray-50 hover:text-red-500"
+                              }`}
+                              onClick={() => handleLinkClick(link.href)}
+                            >
+                              <link.icon className="h-5 w-5 mr-3" />
+                              {link.name}
+                            </Link>
+                          )}
+                        </div>
+                      ))}
+                    </nav>
+                  </div>
+
+                  <div className="p-4 border-t">
+                    <Button
+                      className="w-full bg-red-500 hover:bg-red-600 text-white"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Get Started
+                    </Button>
+                  </div>
+                </div>
+              </SheetContent>
+            </Sheet>
+     </div>
+
+    </>
   )
 }
 
