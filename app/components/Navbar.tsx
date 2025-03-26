@@ -12,8 +12,7 @@ import { Link } from "@remix-run/react"
 import { cn } from "~/lib/utils"
 import { Button } from "./ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "~/components/ui/sheet"
-import { Menu, X, ChevronDown, Home, Info, Settings, Briefcase, Cpu, Phone } from "lucide-react"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "~/components/ui/dropdown-menu"
+import { Menu, X, ChevronDown, Home, Info, Settings, Briefcase, Cpu, Phone ,DatabaseBackup,AppWindow,MonitorPause,Code,Bug, Store, Activity, Cross, Building} from "lucide-react"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "~/components/ui/collapsible"
 
 const components: { title: string; href: string; description: string }[] = [
@@ -61,10 +60,10 @@ const navLinks = [
     href: "#service", 
     icon: Settings,
     dropdown: [
-      { name: "Application", href: "/applicationservice" },
-      { name: "Automation", href: "/automationservice" },
-      { name: "Development", href: "/developmentservice" },
-      { name: "Q&A", href: "/qaservice" },
+      { name: "Application", href: "/applicationservice" , icon: AppWindow},
+      { name: "Automation", href: "/automationservice", icon: MonitorPause },
+      { name: "Development", href: "/developmentservice",icon: Code },
+      { name: "Q&A", href: "/qaservice" ,icon: Bug},
     ],
   },
   {
@@ -72,13 +71,14 @@ const navLinks = [
     href: "#industries",
     icon: Briefcase,
     dropdown: [
-      { name: "E-commerce", href: "/industries/ecommerce" },
-      { name: "Healthcare", href: "/industries/healthcare" },
-      { name: "Fintech", href: "/industries/fintech" },
-      { name: "EdTech", href: "/industries/edtech" },
+      { name: "E-Commerce", href: "/industries/ecommerce" ,icon: Store},
+      { name: "Healthcare", href: "/industries/healthcare" ,icon: Activity},
+      { name: "Fintech", href: "/industries/fintech",icon: Cross },
+      { name: "Other", href: "/industries/other",icon: Building },
     ],
   },
-  { name: "Technology", href: "/technology", icon: Cpu },
+  { name: "Blogs", href: "/blogs", icon: Cpu },
+  { name: "Careers", href: "/jobs", icon: DatabaseBackup },
   { name: "Contact", href: "/contactus", icon: Phone },
 ]
 export function Navbar() {
@@ -187,14 +187,14 @@ export function Navbar() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link  to="/docs">
+          <Link  to="/blogs">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Blog
+              Blogs
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link  to="/docs">
+          <Link  to="/jobs">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Careers
             </NavigationMenuLink>
@@ -270,6 +270,7 @@ export function Navbar() {
                                         openSubmenus[link.name] ? "rotate-180" : ""
                                       }`}
                                     />
+                                    
                                   </Button>
                                 </CollapsibleTrigger>
                               </div>
@@ -279,13 +280,14 @@ export function Navbar() {
                                     <Link
                                       key={idx}
                                       to={item.href}
-                                      className={`block py-2.5 px-3 text-sm rounded-md transition-colors ${
+                                      className={`flex py-2 px-3 text-sm rounded-md transition-colors ${
                                         activeLink === item.href
                                           ? "bg-red-50 text-red-500 font-medium"
                                           : "text-slate-600 hover:bg-gray-100 hover:text-red-500"
                                       }`}
                                       onClick={() => handleLinkClick(item.href)}
                                     >
+                                      <item.icon className="h-4 w-4 text-slate-500 mr-3" />
                                       {item.name}
                                     </Link>
                                   ))}

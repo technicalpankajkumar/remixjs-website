@@ -44,7 +44,7 @@ export default function ContactUs() {
       <div className="container mx-auto px-4">
         <div className="mb-12">
           <p className="text-slate-600">
-            We'd love to hear about your project! Feel free to reach out to us via email at info@unicodesystems.in, or
+            We'd love to hear about your project! Feel free to reach out to us via email at sgtechtechnology@gmail.com, or
             simply fill out the contact form below. Our team will review your message and respond promptly.
           </p>
         </div>
@@ -60,7 +60,7 @@ export default function ContactUs() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Unicode Systems Office Location"
+                title="SG Tech Technology Office Location"
               ></iframe>
             </div>
 
