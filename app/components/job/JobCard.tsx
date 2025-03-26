@@ -63,7 +63,7 @@ export default function JobCard({ job, isExpanded, onToggleDetails }: JobCardPro
   }
 
   return (
-    <div className="border border-gray-200 rounded-lg overflow-hidden transition-all duration-200 hover:shadow-md bg-white">
+    <div className="border border-gray-200 text-gray-950 rounded-lg overflow-hidden transition-all duration-200 hover:shadow-md bg-white">
       <div className="p-6 cursor-pointer" onClick={onToggleDetails}>
         <div className="flex items-start justify-between">
           <div className="flex gap-4">

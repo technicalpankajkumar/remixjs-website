@@ -177,8 +177,8 @@ const Index=()=>{
   
     return(<>
     <div className="container mx-auto px-4 py-4">
-      <div className="lg:flex gap-6 mb-8">
-        <div className="lg:w-1/4 mb-6 lg:mb-0">
+      <div className="lg:flex gap-6 mb-4">
+        <div className="lg:w-1/4 mb-2 lg:mb-0">
           <JobFilter
             filters={filters}
             onFilterChange={handleFilterChange}

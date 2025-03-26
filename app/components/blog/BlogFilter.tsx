@@ -103,13 +103,13 @@ export function BlogFilter() {
   }
 
   return (
-    <div className="w-full mb-8" data-filter-container>
+    <div className="w-full text-gray-900 mb-8" data-filter-container>
       {/* Mobile Filter Toggle */}
       <div className="flex items-center justify-between mb-4 md:hidden">
         <h3 className="text-xl font-bold text-slate-800">Blog Posts</h3>
         <Button variant="outline" size="sm" onClick={() => setIsOpen(!isOpen)} className="flex items-center gap-1">
           <Filter className="h-4 w-4" />
-          <span>Filter</span>
+          <span className=" text-black">Filter</span>
           {isOpen ? <ChevronUp className="h-4 w-4 ml-1" /> : <ChevronDown className="h-4 w-4 ml-1" />}
         </Button>
       </div>
