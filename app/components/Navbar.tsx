@@ -13,7 +13,9 @@ import { cn } from "~/lib/utils"
 import { Button } from "./ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "~/components/ui/sheet"
 import { Menu, X, ChevronDown, Home, Info, Settings, Briefcase, Cpu, Phone ,DatabaseBackup,AppWindow,MonitorPause,Code,Bug, Store, Activity, Cross, Building, ShoppingBag, LucideProps} from "lucide-react"
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "~/components/ui/collapsible"
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "~/components/ui/collapsible";
+import image from '../../public/assets/customerimg.png'
+import image2 from '../../public/assets/customerimg2.png'
 interface navDataType { 
   id:string,
   name: string; 
@@ -101,22 +103,33 @@ export function Navbar() {
               return (<NavigationMenuItem key={menu.id}>
                 <NavigationMenuTrigger>{menu.name}</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] relative bg-cover bg-center" style={{ backgroundImage: `url('https://watermark.lovepik.com/photo/20211130/large/lovepik-customer-service-team-group-picture_501227017.jpg')` }}>
-                    <li className="row-span-3 rounded-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.4)' }}>
-                      <NavigationMenuLink asChild>
-                        <Link
-                          className="flex h-full w-full select-none flex-col justify-end rounded-md  p-6 no-underline outline-none focus:shadow-md "
-                          to={menu.to}
-                        >
-                          <div className="mb-2 mt-4 text-lg font-medium">
-                           Our {menu.name}
-                          </div>
-                          <p className="text-sm leading-tight ">
-                           {menu.description}
-                          </p>
-                        </Link>
-                      </NavigationMenuLink>
-                    </li>
+                  <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] ">
+                  <li className="row-span-3 rounded-lg relative" style={{ backgroundColor: 'rgba(255, 255, 255, 0.4)' }}>
+                    <div
+                      style={{
+                        backgroundImage: `url(${menu.id == "3" ? image : image2})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                      }}
+                      className="w-full h-full rounded-lg relative"
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-85 text-white">
+                        <NavigationMenuLink asChild>
+                          <Link
+                            className="flex h-full w-full select-none flex-col justify-end rounded-md p-6 no-underline outline-none focus:shadow-md"
+                            to={menu.to}
+                          >
+                            <div className="mb-2 mt-4 text-lg font-medium">
+                              {menu.name}
+                            </div>
+                            <p className="text-sm leading-tight">
+                              {menu.description}
+                            </p>
+                          </Link>
+                        </NavigationMenuLink>
+                      </div>
+                    </div>
+                  </li>
                     {
                       menu?.dropdown?.map( submenu =>{
                         return (<ListItem key={submenu.id} href={submenu.to} title={submenu.name}>
