@@ -1,11 +1,13 @@
-import { Link } from "@remix-run/react";
+import { Link, Outlet, useLocation } from "@remix-run/react";
 import { CheckSquare, ChevronRight, Globe, Link2, Server, Smartphone } from "lucide-react";
 import { useState } from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "~/components/ui/accordion"
 import { Button } from "~/components/ui/button";
 
 const Index = () => {
+    const location = useLocation()
     const [activeService, setActiveService] = useState("web");
+
     const services = [
         {
             id: "web",
@@ -33,6 +35,10 @@ const Index = () => {
         },
     ]
 
+
+    if(location.pathname != "/services"){
+        return  <Outlet/>
+    }
     return (<>
         {/* hero section start here */}
         <section className="py-12 md:py-18 bg-white overflow-hidden">
@@ -122,7 +128,7 @@ const Index = () => {
                                             <span className="text-slate-950">{service.title}</span>
                                         </div>
                                     </AccordionTrigger>
-                                    <AccordionContent className="px-4 pb-4 pt-1 text-slate-950">{service.description}</AccordionContent>
+                                    <AccordionContent className="px-4 pb-4 pt-1 text-slate-950">{service?.description}</AccordionContent>
                                 </AccordionItem>
                             ))}
                         </Accordion>

@@ -596,3 +596,31 @@ export const jobData = [
   ]
   
   
+
+export const faqs = [
+    {
+        question: "What is the typical development timeline for a custom application?",
+        answer:
+            "Development timelines vary based on the complexity and scope of the project. Simple applications may take 2-3 months, while more complex enterprise solutions can take 6-12 months. During our initial consultation, we'll provide a detailed timeline based on your specific requirements.",
+    },
+    {
+        question: "How do you ensure the security of custom applications?",
+        answer:
+            "Security is a top priority in all our development projects. We implement industry best practices including secure coding standards, encryption for sensitive data, regular security audits, penetration testing, and compliance with relevant regulations like GDPR or HIPAA depending on your industry.",
+    },
+    {
+        question: "Can you provide examples of custom applications you've developed?",
+        answer:
+            "We've developed a wide range of custom applications across various industries, including healthcare management systems, e-commerce platforms with custom inventory management, financial services applications with complex reporting, and manufacturing process automation systems. We'd be happy to share relevant case studies during our consultation.",
+    },
+    {
+        question: "Do you provide ongoing support after the application is launched?",
+        answer:
+            "Yes, we offer comprehensive support and maintenance packages to ensure your application continues to run smoothly. Our support includes bug fixes, security updates, performance optimization, and feature enhancements. We can tailor a support plan to meet your specific needs and budget.",
+    },
+    {
+        question: "What technologies do you use for custom application development?",
+        answer:
+            "We work with a wide range of modern technologies based on project requirements. For web applications, we commonly use React, Angular, or Vue.js for frontend and Node.js, Python, or .NET for backend. For mobile, we develop native apps using Swift/Kotlin or cross-platform solutions with React Native or Flutter. Our technology recommendations are always based on your specific needs and long-term goals.",
+    },
+]

@@ -12,74 +12,45 @@ import { Link } from "@remix-run/react"
 import { cn } from "~/lib/utils"
 import { Button } from "./ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "~/components/ui/sheet"
-import { Menu, X, ChevronDown, Home, Info, Settings, Briefcase, Cpu, Phone ,DatabaseBackup,AppWindow,MonitorPause,Code,Bug, Store, Activity, Cross, Building} from "lucide-react"
+import { Menu, X, ChevronDown, Home, Info, Settings, Briefcase, Cpu, Phone ,DatabaseBackup,AppWindow,MonitorPause,Code,Bug, Store, Activity, Cross, Building, ShoppingBag, LucideProps} from "lucide-react"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "~/components/ui/collapsible"
-
-const components: { title: string; href: string; description: string }[] = [
-  {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
-  },
-  {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
-  },
-  {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
-  },
-  {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-  },
-]
-
-const navLinks = [
-  { name: "Home", href: "/", icon: Home },
-  { name: "About", href: "/about", icon: Info },
-  { name: "Services", 
-    href: "#service", 
+interface navDataType { 
+  id:string,
+  name: string; 
+  to: string; 
+  icon:React.ForwardRefExoticComponent<Omit<LucideProps, "ref">>, 
+  description?: string;
+  dropdown?:navDataType[]
+}
+const navData: navDataType[]= [
+  { id: "1" , name: "Home", to: "/", icon: Home },
+  { id: "2" , name: "About", to: "/about", icon: Info },
+  { id: "3", name: "Services", 
+    to: "/services", 
     icon: Settings,
+    description:"Partner with us to create powerful, scalable solutions that drive growth and efficiency in your organization.",
     dropdown: [
-      { name: "Application", href: "/applicationservice" , icon: AppWindow},
-      { name: "Automation", href: "/automationservice", icon: MonitorPause },
-      { name: "Development", href: "/developmentservice",icon: Code },
-      { name: "Q&A", href: "/qaservice" ,icon: Bug},
+      { id:"31", name: "Custom Software", to: "/services/customsoftware" , icon: AppWindow,description:"In today's competitive landscape, businesses need innovative solutions to stay ahead"},
+      { id:"32", name: "SaaS", to: "/services/saas", icon: MonitorPause, description:"Access Anytime, Anywhere: Scalable SaaS Solutions for Modern Businesses." },
+      { id:"33", name: "Support's", to: "/services/supports",icon: Code , description:"Always Here for You: Reliable Support Solutions to Keep Your Business Running Smoothly."},
     ],
   },
   {
+    id:"4",
     name: "Industries",
-    href: "#industries",
+    to: "/industries",
     icon: Briefcase,
+    description: "Drive growth and efficiency with our specialized software designed to meet the unique needs of your industry." ,
     dropdown: [
-      { name: "E-Commerce", href: "/industries/ecommerce" ,icon: Store},
-      { name: "Healthcare", href: "/industries/healthcare" ,icon: Activity},
-      { name: "Fintech", href: "/industries/fintech",icon: Cross },
-      { name: "Other", href: "/industries/other",icon: Building },
+      { id:"41",name: "E-Commerce", to: "/industries/ecommerce" ,icon: Store , description: "Transforming Retail: Seamless Shopping Experiences Tailored for Every Customer."},
+      { id:"42",name: "Healthcare", to: "/industries/healthcare" ,icon: Activity, description:"Streamlining Healthcare Management with Cutting-Edge Technology and Insights."},
+      { id:"43",name: "Fitness", to: "/industries/fitness",icon: Cross,description:"Transforming Lives Through Technology: Innovative Fitness Solutions for a Healthier You." },
+      { id:"44",name: "ERP", to: "/industries/erp",icon: ShoppingBag , description: "Integrate, Automate, Elevate: Your All-in-One ERP Solution for Business Efficiency."},
+      { id:"45",name: "Others", to: "/industries/others",icon: Building,description: "Your Partner in Progress: Custom Software Services to Meet Every Business Need." },
     ],
   },
-  { name: "Blogs", href: "/blogs", icon: Cpu },
-  { name: "Careers", href: "/jobs", icon: DatabaseBackup },
-  { name: "Contact", href: "/contactus", icon: Phone },
+  { id:"5",name: "Blogs", to: "/blogs", icon: Cpu },
+  { id:"6",name: "Careers", to: "/jobs", icon: DatabaseBackup },
 ]
 export function Navbar() {
   const [isScrolled, setIsScrolled] = React.useState(false)
@@ -124,82 +95,48 @@ export function Navbar() {
     <div className="hidden lg:flex items-center space-x-8">
     <NavigationMenu>
       <NavigationMenuList className="flex flex-wrap">
-      <NavigationMenuItem>
-          <Link to="/">
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Home
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link  to="/about">
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              About Us
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Service</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <Link
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gray-900 bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    to="/applicationservice"
-                  >
-                    {/* <Icons.logo className="h-6 w-6" /> */}
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      Our Services
-                    </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                    In today's competitive landscape, businesses need innovative solutions to stay ahead.
-                    </p>
-                  </Link>
+        {
+          navData?.map(menu => {
+            if(menu.dropdown){
+              return (<NavigationMenuItem key={menu.id}>
+                <NavigationMenuTrigger>{menu.name}</NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] relative bg-cover bg-center" style={{ backgroundImage: `url('https://watermark.lovepik.com/photo/20211130/large/lovepik-customer-service-team-group-picture_501227017.jpg')` }}>
+                    <li className="row-span-3 rounded-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.4)' }}>
+                      <NavigationMenuLink asChild>
+                        <Link
+                          className="flex h-full w-full select-none flex-col justify-end rounded-md  p-6 no-underline outline-none focus:shadow-md "
+                          to={menu.to}
+                        >
+                          <div className="mb-2 mt-4 text-lg font-medium">
+                           Our {menu.name}
+                          </div>
+                          <p className="text-sm leading-tight ">
+                           {menu.description}
+                          </p>
+                        </Link>
+                      </NavigationMenuLink>
+                    </li>
+                    {
+                      menu?.dropdown?.map( submenu =>{
+                        return (<ListItem key={submenu.id} href={submenu.to} title={submenu.name}>
+                          {submenu.description}
+                          </ListItem>)
+                      })
+                    }
+                  </ul>
+                </NavigationMenuContent>
+              </NavigationMenuItem>)
+            }
+            return(<NavigationMenuItem key={menu.id}>
+              <Link to={menu.to}>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  {menu.name}
                 </NavigationMenuLink>
-              </li>
-              <ListItem href="/automationservice" title="Our Automation">
-                Our Automation service to help automate your business with custom softwares.
-              </ListItem>
-              <ListItem href="/developmentservice" title="Our Development">
-              Our Development service to help create Custom software as per your need and requirement.
-              </ListItem>
-              <ListItem href="/supportservice" title="Our Support">
-                Our Support Service helps to you 24/7 with Technical or Software supports.
-              </ListItem>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Industry</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  {component.description}
-                </ListItem>
-              ))}
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link  to="/blogs">
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Blogs
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link  to="/jobs">
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Careers
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
+              </Link>
+            </NavigationMenuItem>)
+          })
+        }
       </NavigationMenuList>
     </NavigationMenu>
     <Link to={'/contactus'} className="flex items-center bg-gray-800 bg-gradient-to-from px-2 py-1 md:py-2 rounded-lg text-white">CONTACT US</Link>
@@ -232,7 +169,7 @@ export function Navbar() {
 
                   <div className="flex-1 overflow-auto py-4">
                     <nav className="flex flex-col">
-                      {navLinks.map((link, index) => (
+                      {navData?.map((link, index) => (
                         <div key={index} className="border-b border-gray-100 last:border-b-0">
                           {link.dropdown ? (
                             <Collapsible
@@ -246,7 +183,7 @@ export function Navbar() {
                             >
                               <div
                                 className={`flex items-center px-4 py-3 cursor-pointer ${
-                                  activeLink.startsWith(link.href) || openSubmenus[link.name] ? "bg-gray-50" : ""
+                                  activeLink.startsWith(link.to) || openSubmenus[link.name] ? "bg-gray-50" : ""
                                 } hover:bg-gray-50`}
                                 onClick={(e) => {
                                   e.stopPropagation()
@@ -279,13 +216,13 @@ export function Navbar() {
                                   {link.dropdown.map((item, idx) => (
                                     <Link
                                       key={idx}
-                                      to={item.href}
+                                      to={item.to}
                                       className={`flex py-2 px-3 text-sm rounded-md transition-colors ${
-                                        activeLink === item.href
+                                        activeLink === item.to
                                           ? "bg-red-50 text-red-500 font-medium"
                                           : "text-slate-600 hover:bg-gray-100 hover:text-red-500"
                                       }`}
-                                      onClick={() => handleLinkClick(item.href)}
+                                      onClick={() => handleLinkClick(item.to)}
                                     >
                                       <item.icon className="h-4 w-4 text-slate-500 mr-3" />
                                       {item.name}
@@ -296,13 +233,13 @@ export function Navbar() {
                             </Collapsible>
                           ) : (
                             <Link
-                              to={link.href}
+                              to={link.to}
                               className={`flex items-center px-4 py-3 font-medium transition-colors ${
-                                activeLink === link.href
+                                activeLink === link.to
                                   ? "bg-gray-50 text-red-500"
                                   : "text-slate-800 hover:bg-gray-50 hover:text-red-500"
                               }`}
-                              onClick={() => handleLinkClick(link.href)}
+                              onClick={() => handleLinkClick(link.to)}
                             >
                               <link.icon className="h-5 w-5 mr-3" />
                               {link.name}
@@ -314,12 +251,14 @@ export function Navbar() {
                   </div>
 
                   <div className="p-4 border-t">
+                    <Link to={'/contactus'}>
                     <Button
                       className="w-full bg-red-500 hover:bg-red-600 text-white"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
-                      Get Started
+                      CONTACT US
                     </Button>
+                    </Link>
                   </div>
                 </div>
               </SheetContent>

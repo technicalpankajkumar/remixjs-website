@@ -145,12 +145,12 @@ export default function Post() {
 
         {/* Main Content */}
         <div className="md:w-3/4">
-          <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: post.content }} />
+          <div className="prose max-w-none text-gray-950" dangerouslySetInnerHTML={{ __html: post.content }} />
 
           {post.sections.map((section) => (
             <div key={section.id} id={section.id} className="mt-8">
-              <h2 className="text-2xl font-bold text-slate-800 mb-4">{section.title}</h2>
-              <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: section.content }} />
+              <h2 className="text-2xl font-bold text-gray-950 mb-4">{section.title}</h2>
+              <div className="prose max-w-none text-gray-950 " dangerouslySetInnerHTML={{ __html: section.content }} />
             </div>
           ))}
 
