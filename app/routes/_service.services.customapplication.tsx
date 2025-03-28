@@ -7,10 +7,10 @@ const Index = () => {
         {/* automation hero section start here*/}
         <section className="py-12 md:py-18 bg-white overflow-hidden">
             <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-6">
-                            Accelerate Your Business With Automation
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center place-content-center">
+                    <div className="order-last lg:order-first">
+                        <h2 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">
+                            Accelerate your business with our custom applications.
                         </h2>
                         <p className="text-slate-600 mb-4">
                             Our expert team offers a range of automation services, including robotic process automation (RPA),
@@ -24,15 +24,14 @@ const Index = () => {
                             <Link to="#contact">SPEAK TO AN EXPERTS</Link>
                         </Button>
                     </div>
-
-                    <div className="relative">
-                        <img
-                            src="https://media.licdn.com/dms/image/v2/D4D12AQHaPsfnyVjbGw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1690809574313?e=2147483647&v=beta&t=a9uAL7eSdtmrzlzYom1AozcKMMds5PWyh25pt8Oy4Ko"
-                            alt="Business Automation"
-                            width={600}
-                            height={400}
-                            className="w-full h-auto rounded-lg shadow-lg"
-                        />
+                    <div className="flex justify-center">
+                        <div className="relative md:w-[400px] lg:w-[500px] text-end">
+                            <img
+                                src={"../assets/customservice.webp"}
+                                alt="Business Automation"
+                                className="w-full object-cover rounded-lg "
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
