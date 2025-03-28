@@ -14,8 +14,8 @@ import { Button } from "./ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "~/components/ui/sheet"
 import { Menu, X, ChevronDown, Home, Info, Settings, Briefcase, Cpu, Phone ,DatabaseBackup,AppWindow,MonitorPause,Code,Bug, Store, Activity, Cross, Building, ShoppingBag, LucideProps} from "lucide-react"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "~/components/ui/collapsible";
-import image from '../../public/assets/customerimg.png'
-import image2 from '../../public/assets/customerimg2.png'
+import image from '/assets/customerimg2.png'
+import image2 from '/assets/customerimg.png'
 interface navDataType { 
   id:string,
   name: string; 
