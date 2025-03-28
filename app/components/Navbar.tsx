@@ -32,7 +32,7 @@ const navData: navDataType[]= [
     icon: Settings,
     description:"Partner with us to create powerful, scalable solutions that drive growth and efficiency in your organization.",
     dropdown: [
-      { id:"31", name: "Custom Software", to: "/services/customsoftware" , icon: AppWindow,description:"In today's competitive landscape, businesses need innovative solutions to stay ahead"},
+      { id:"31", name: "Custom Application", to: "/services/customapplication" , icon: AppWindow,description:"In today's competitive landscape, businesses need innovative solutions to stay ahead"},
       { id:"32", name: "SaaS", to: "/services/saas", icon: MonitorPause, description:"Access Anytime, Anywhere: Scalable SaaS Solutions for Modern Businesses." },
       { id:"33", name: "Support's", to: "/services/supports",icon: Code , description:"Always Here for You: Reliable Support Solutions to Keep Your Business Running Smoothly."},
     ],

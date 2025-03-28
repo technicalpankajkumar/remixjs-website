@@ -16,10 +16,10 @@ const Index = () => {
     const location = useLocation();
 
     const data:Services = {
-        "/services":{ description: 'Application Services'},
-        "/services/customsoftware":{ description: 'Application Services'},
-        "/services/saas": { description:'Automation Services' },
-        "/services/supports": { description: "Support's Service" }
+        "/services":{ description: 'Services'},
+        "/services/customapplication":{ description: 'Custom Application'},
+        "/services/saas": { description:'Software as a Service' },
+        "/services/supports": { description: "Support's" }
     }
 
     return (<>
