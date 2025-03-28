@@ -48,6 +48,10 @@ const navData: navDataType[]= [
       { id:"42",name: "Healthcare", to: "/industries/healthcare" ,icon: Activity, description:"Streamlining Healthcare Management with Cutting-Edge Technology and Insights."},
       { id:"43",name: "Fitness", to: "/industries/fitness",icon: Cross,description:"Transforming Lives Through Technology: Innovative Fitness Solutions for a Healthier You." },
       { id:"44",name: "ERP", to: "/industries/erp",icon: ShoppingBag , description: "Integrate, Automate, Elevate: Your All-in-One ERP Solution for Business Efficiency."},
+      { id:"44",name: "Education", to: "/industries/education",icon: ShoppingBag , description: "Integrate, Automate, Elevate: Your All-in-One ERP Solution for Business Efficiency."},
+      { id:"44",name: "Transpotation", to: "/industries/transpotation",icon: ShoppingBag , description: "Integrate, Automate, Elevate: Your All-in-One ERP Solution for Business Efficiency."},
+      { id:"44",name: "Banking & Finance", to: "/industries/banking",icon: ShoppingBag , description: "Integrate, Automate, Elevate: Your All-in-One ERP Solution for Business Efficiency."},
+      { id:"44",name: "Telicommunication", to: "/industries/telicommunication",icon: ShoppingBag , description: "Integrate, Automate, Elevate: Your All-in-One ERP Solution for Business Efficiency."},
       { id:"45",name: "Others", to: "/industries/others",icon: Building,description: "Your Partner in Progress: Custom Software Services to Meet Every Business Need." },
     ],
   },
@@ -103,7 +107,7 @@ export function Navbar() {
               return (<NavigationMenuItem key={menu.id}>
                 <NavigationMenuTrigger>{menu.name}</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] ">
+                  <ul className={`grid gap-3 p-4 ${(menu.name).toLocaleLowerCase() == 'services' ? " md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]" : "md:w-[500px] lg:w-[650px]  lg:grid-cols-3"}`}>
                   <li className="row-span-3 rounded-lg relative" style={{ backgroundColor: 'rgba(255, 255, 255, 0.4)' }}>
                     <div
                       style={{
