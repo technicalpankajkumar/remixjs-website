@@ -63,7 +63,7 @@ const Index = () => {
     }
     return (<>
         {/* hero section start here */}
-        <section className="py-12 md:py-18 bg-white overflow-hidden">
+        <section className="py-12 md:py-18 overflow-hidden">
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 place-items-center">
                     <div>
@@ -127,7 +127,7 @@ const Index = () => {
         </section>
         {/* hero section end here */}
         {/* Service Offering Section start */}
-        <section className="relative bg-slate-800 py-12 md:py-18 overflow-hidden container mx-auto text-white">
+        <section className="relative py-12 md:py-18 overflow-hidden container mx-auto ">
             <div className="absolute inset-0 z-0 opacity-30 bg-[url('/assets/customerservice1.webp')] bg-cover bg-top"></div>
             <div className="container relative z-10 mx-auto px-4">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">

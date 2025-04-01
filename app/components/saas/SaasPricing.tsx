@@ -66,7 +66,7 @@ export function SaasPricing() {
     },
     {
       id: "education",
-      name: "Education Management",
+      name: "Education System",
       plans: [
         {
           name: "Basic",
@@ -121,7 +121,7 @@ export function SaasPricing() {
     },
     {
       id: "healthcare",
-      name: "Hospital Management",
+      name: "Healthcare System",
       plans: [
         {
           name: "Clinic",
@@ -231,7 +231,7 @@ export function SaasPricing() {
     },
     {
       id: "crm",
-      name: "CRM System",
+      name: "Transpotation System",
       plans: [
         {
           name: "Basic",
@@ -284,6 +284,61 @@ export function SaasPricing() {
         },
       ],
     },
+    {
+      id: "fitness",
+      name: "Fitness System",
+      plans: [
+        {
+          name: "Basic",
+          monthlyPrice: 29,
+          annualPrice: 23,
+          description: "For small teams and startups",
+          features: [
+            { name: "Contact Management", included: true },
+            { name: "Lead Tracking", included: true },
+            { name: "Up to 5 users", included: true },
+            { name: "Basic Reporting", included: true },
+            { name: "Email Support", included: true },
+            { name: "Marketing Automation", included: false },
+            { name: "Sales Forecasting", included: false },
+            { name: "API Access", included: false },
+          ],
+        },
+        {
+          name: "Professional",
+          monthlyPrice: 79,
+          annualPrice: 63,
+          description: "For growing sales teams",
+          features: [
+            { name: "Contact Management", included: true },
+            { name: "Lead Tracking", included: true },
+            { name: "Up to 25 users", included: true },
+            { name: "Advanced Reporting", included: true },
+            { name: "Priority Support", included: true },
+            { name: "Marketing Automation", included: true },
+            { name: "Sales Forecasting", included: true },
+            { name: "API Access", included: false },
+          ],
+          popular: true,
+        },
+        {
+          name: "Enterprise",
+          monthlyPrice: 149,
+          annualPrice: 119,
+          description: "For large sales organizations",
+          features: [
+            { name: "Contact Management", included: true },
+            { name: "Lead Tracking", included: true },
+            { name: "Unlimited users", included: true },
+            { name: "Advanced Reporting", included: true },
+            { name: "24/7 Priority Support", included: true },
+            { name: "Marketing Automation", included: true },
+            { name: "Sales Forecasting", included: true },
+            { name: "API Access", included: true },
+          ],
+        },
+      ],
+    }
   ]
 
   return (
@@ -315,8 +370,8 @@ export function SaasPricing() {
           </div>
         </div>
 
-        <Tabs defaultValue="erp" className="w-full">
-          <TabsList className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mb-8">
+        <Tabs defaultValue="erp" className="">
+          <TabsList className="flex flex-wrap gap-4 mb-8 justify-around">
             {solutions.map((solution) => (
               <TabsTrigger key={solution.id} value={solution.id}>
                 {solution.name}

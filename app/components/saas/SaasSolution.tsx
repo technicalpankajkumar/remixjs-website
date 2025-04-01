@@ -7,7 +7,7 @@ import { Link } from "@remix-run/react"
 
 export default function SaasSolutions() {
   return (
-    <section id="solutions" className="py-10 bg-white">
+    <section id="solutions" className="py-10 bg-white text-gray-900">
       <div className="container mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-2">Industry-Specific SaaS Solutions</h2>
@@ -17,8 +17,8 @@ export default function SaasSolutions() {
         </div>
 
         <Tabs defaultValue="erp" className="w-full">
-          <div className="flex justify-center mb-4">
-            <TabsList className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2">
+          {/* <div className="flex justify-center mb-4"> */}
+            <TabsList className="flex flex-wrap gap-4 justify-around">
               <TabsTrigger value="erp" className="flex gap-2 items-center py-1 px-4">
                 <Building2 className="h-5 w-5 mb-1" />
                 <span>ERP</span>
@@ -44,7 +44,7 @@ export default function SaasSolutions() {
                 <span>Fitness</span>
               </TabsTrigger>
             </TabsList>
-          </div>
+          {/* </div> */}
 
           <TabsContent value="erp" className="mt-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -54,7 +54,7 @@ export default function SaasSolutions() {
                   Our cloud-based ERP solution integrates all core business processes into a single system. Manage
                   finance, HR, inventory, supply chain, and more from one unified platform.
                 </p>
-                <ul className="space-y-3 mb-8">
+                <ul className="space-y-3 mb-8 text-gray-900">
                   {[
                     "Comprehensive financial management",
                     "Inventory and supply chain optimization",
