@@ -46,12 +46,10 @@ const Index = () => {
                         style={{ backgroundImage: `url('/assets/customerservice1.webp')`, backgroundPosition: "top" }}>
                     </div>
                     <div className="relative z-10 p-8 md:p-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">Book Demo For {location.pathname == "/services/customapplication" ? " Custom Applications" : "SaaS"}</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">{location.pathname == "/services/supports" ? "Support Availablily (10 AM To 6 PM)" :location.pathname == "/services/customapplication" ? "Book Demo For Custom Applications" : "Book Demo For SaaS"}</h2>
                         <div className="h-1 w-24 bg-red-500 mb-4"></div>
                         <p className="text-gray-300 text-lg max-w-3xl">
-                            We specialize in delivering innovative automation solutions tailored to your unique needs. Our expert team
-                            leverages cutting-edge technologies to automate repetitive tasks, optimize workflows, and drive digital
-                            transformation.
+                          { " We specialize in delivering innovative automation solutions tailored to your unique needs. Our expert team leverages cutting-edge technologies to automate repetitive tasks, optimize workflows, and drive digital transformation."}
                         </p>
                         <Button asChild className="bg-red-600 hover:bg-red-600 text-white font-medium px-6 py-2 h-auto mt-2">
                             <Link to="/contactus">Book Demo</Link>

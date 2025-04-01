@@ -1,10 +1,14 @@
+import SupportCategories from "~/components/support/SupportCategories";
+import SupportContact from "~/components/support/SupportContact";
+import SupportHeader from "~/components/support/SupportHeader";
 
-
-
-const Index = () => {
-    return (<div>
-        Under Development
-    </div>)
+export default function Index() {
+  return (
+      <main className="flex-1 pt-16 md:pt-20">
+        <SupportHeader />
+        <SupportCategories />
+        {/* <SupportFaq /> */}
+        <SupportContact />
+      </main>
+  )
 }
-
-export default Index;
