@@ -168,7 +168,7 @@ const Index = () => {
 
                         {/* Mobile view */}
                         <Accordion type="single" collapsible className="md:hidden">
-                            {services.map((service) => (
+                            {services?.map((service) => (
                                 <AccordionItem key={service.id} value={service.id}>
                                     <AccordionTrigger className="px-4 py-3">
                                         <div className="flex items-center">

@@ -1,3 +1,4 @@
+import { Outlet } from "@remix-run/react";
 import SupportCategories from "~/components/support/SupportCategories";
 import SupportContact from "~/components/support/SupportContact";
 import SupportFaq from "~/components/support/SupportFaq";
