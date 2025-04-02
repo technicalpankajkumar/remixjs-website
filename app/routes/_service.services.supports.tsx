@@ -1,14 +1,15 @@
 import SupportCategories from "~/components/support/SupportCategories";
 import SupportContact from "~/components/support/SupportContact";
+import SupportFaq from "~/components/support/SupportFaq";
 import SupportHeader from "~/components/support/SupportHeader";
 
 export default function Index() {
   return (
-      <main className="flex-1 pt-16 md:pt-20">
+      <main className="flex-1">
         <SupportHeader />
         <SupportCategories />
-        {/* <SupportFaq /> */}
         <SupportContact />
+        <SupportFaq />
       </main>
   )
 }

@@ -39,7 +39,7 @@ export default function SupportContact() {
   ]
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-10 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Still Need Help?</h2>
@@ -63,9 +63,8 @@ export default function SupportContact() {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <p className="text-gray-600">Support hours: Monday-Friday, 9am-6pm EST</p>
-          <p className="text-gray-600 mt-2">Average response time: &lt;24 hours</p>
+        <div className="mt-8 text-center">
+          <p className="text-gray-600 text-wrap"><b>Support hours:- </b> Monday-Friday, 9am-6pm  Average response time: &lt;24 hours</p>
         </div>
       </div>
     </section>

@@ -39,14 +39,14 @@ const Index = () => {
     if (location.pathname != "/services") {
         return (<>
             <Outlet />
-            <div className="container mx-auto px-4 mt-4">
+            {location.pathname != '/services/supports' && <div className="container mx-auto px-4 mt-4">
                 <div className="relative bg-slate-800 rounded-lg overflow-hidden" >
                     <div
                         className="absolute inset-0 z-0 opacity-40 bg-cover bg-center object-bottom"
                         style={{ backgroundImage: `url('/assets/customerservice1.webp')`, backgroundPosition: "top" }}>
                     </div>
                     <div className="relative z-10 p-8 md:p-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">{location.pathname == "/services/supports" ? "Support Availablily (10 AM To 6 PM)" :location.pathname == "/services/customapplication" ? "Book Demo For Custom Applications" : "Book Demo For SaaS"}</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">{location.pathname == "/services/customapplication" ? "Book Demo For Custom Applications" : "Book Demo For SaaS"}</h2>
                         <div className="h-1 w-24 bg-red-500 mb-4"></div>
                         <p className="text-gray-300 text-lg max-w-3xl">
                           { " We specialize in delivering innovative automation solutions tailored to your unique needs. Our expert team leverages cutting-edge technologies to automate repetitive tasks, optimize workflows, and drive digital transformation."}
@@ -56,7 +56,7 @@ const Index = () => {
                         </Button>
                     </div>
                 </div>
-            </div>
+            </div>}
         </>)
     }
     return (<>

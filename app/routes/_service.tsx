@@ -22,8 +22,11 @@ const Index = () => {
         "/services/supports": { description: "Support's" }
     }
 
+    if(location.pathname == "/services/supports"){
+        return <Outlet/>
+    }
     return (<>
-        <CommonHeader title={'Our Service'} description={data[location.pathname].description} />
+      <CommonHeader title={'Our Service'} description={data[location.pathname].description} />
         <Outlet />
         {/* Faq section start here */}
         <section className="py-12 md:py-18 bg-white">

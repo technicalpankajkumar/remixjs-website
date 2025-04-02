@@ -81,9 +81,9 @@ export default function SupportCategories() {
   ]
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Need help? We've got your back.</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             From account settings to permissions, find help for everything. If you're new and looking for tips, check
