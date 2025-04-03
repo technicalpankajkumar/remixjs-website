@@ -39,7 +39,7 @@ const Index = () => {
     if (location.pathname != "/services") {
         return (<>
             <Outlet />
-            {location.pathname != '/services/supports' && <div className="container mx-auto px-4 mt-4">
+            {(location.pathname == '/services/saas' || location.pathname == '/services/customapplication') && <div className="container mx-auto px-4 mt-4">
                 <div className="relative bg-slate-800 rounded-lg overflow-hidden" >
                     <div
                         className="absolute inset-0 z-0 opacity-40 bg-cover bg-center object-bottom"
@@ -79,7 +79,7 @@ const Index = () => {
                             tailored to your specific needs, can revolutionize your operations and drive growth.
                         </p>
 
-                        <Button asChild className="bg-red-500 hover:bg-red-600 text-white font-medium px-6 py-2 h-auto">
+                        <Button asChild className="bg-slate-950 hover:bg-slate-800 text-white font-medium px-6 py-2 h-auto">
                             <Link to="/services/customapplication">TAP TO GO</Link>
                         </Button>
                     </div>
@@ -116,7 +116,7 @@ const Index = () => {
                             tailored to your specific needs, can revolutionize your operations and drive growth.
                         </p>
 
-                        <Button asChild className="bg-red-500 hover:bg-red-600 text-white font-medium px-6 py-2 h-auto">
+                        <Button asChild className="bg-slate-950 hover:bg-slate-800 text-white font-medium px-6 py-2 h-auto">
                             <Link to="/services/saas">TAP TO GO</Link>
                         </Button>
                     </div>
@@ -125,7 +125,7 @@ const Index = () => {
         </section>
         {/* hero section end here */}
         {/* Service Offering Section start */}
-        <section className="relative py-12 md:py-18 overflow-hidden container mx-auto ">
+        <section className="relative py-12 bg-slate-900 rounded-lg md:py-16 px-2 md:px-4 overflow-hidden container mx-auto ">
             <div className="absolute inset-0 z-0 opacity-30 bg-[url('/assets/customerservice1.webp')] bg-cover bg-top"></div>
             <div className="container relative z-10 mx-auto px-4">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">

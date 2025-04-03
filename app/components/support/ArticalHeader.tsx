@@ -15,11 +15,11 @@ export default function ArticleHeader({ title, category, categorySlug, date, aut
     <section className={`${color} py-12`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center text-white text-sm mb-4">
-          <Link to="/support" className="hover:underline">
+          <Link to="/services/supports" className="hover:underline">
             Help Center
           </Link>
           <ChevronRight className="h-4 w-4 mx-2" />
-          <Link to={`/support/${categorySlug}`} className="hover:underline">
+          <Link to={`/services/supports/${categorySlug}`} className="hover:underline">
             {category}
           </Link>
           <ChevronRight className="h-4 w-4 mx-2" />

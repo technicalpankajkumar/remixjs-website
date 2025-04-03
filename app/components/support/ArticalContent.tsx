@@ -9,8 +9,8 @@ export default function ArticleContent({ content }: ArticleContentProps) {
   return (
     <section className="py-12 bg-white">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto">
-          <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: content }} />
+        <div className="max-w-5xl mx-auto">
+          <div className="prose max-w-none text-slate-950" dangerouslySetInnerHTML={{ __html: content }} />
 
           <div className="mt-12 pt-6 border-t border-gray-200">
             <h3 className="text-lg font-medium text-gray-900 mb-4">Was this article helpful?</h3>

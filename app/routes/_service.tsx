@@ -22,7 +22,7 @@ const Index = () => {
         "/services/supports": { description: "Support's" }
     }
 
-    if(location.pathname == "/services/supports" || location.pathname?.split("/").length == 4){
+    if(location.pathname == "/services/supports" || location.pathname?.split("/").length >= 4){
         return <Outlet/>
     }
     

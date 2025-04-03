@@ -342,7 +342,7 @@ export function SaasPricing() {
   ]
 
   return (
-    <section id="pricing" className="py-10 bg-white text-gray-950">
+    <section id="pricing" className="py-10 bg-gray-50 text-gray-950">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Transparent, Flexible Pricing</h2>
@@ -380,8 +380,8 @@ export function SaasPricing() {
           </TabsList>
 
           {solutions.map((solution) => (
-            <TabsContent key={solution.id} value={solution.id} className="mt-4">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <TabsContent key={solution.id} value={solution.id} className="mt-4 px-10">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-slate-950">
                 {solution.plans.map((plan, index) => (
                   <Card key={index} className={`overflow-hidden ${plan.popular ? "border-blue-500 border-2" : ""}`}>
                     {plan.popular && (

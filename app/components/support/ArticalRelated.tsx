@@ -85,7 +85,7 @@ export default function ArticleRelated({ category, currentArticle }: ArticleRela
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {relatedArticles.map((article, index) => (
-              <Link key={index} to={`/support/${category}/${article.slug}`} className="block group">
+              <Link key={index} to={`/services/supports/${category}/${article.slug}`} className="block group">
                 <Card className="border-0 shadow-sm hover:shadow-md transition-shadow h-full">
                   <CardContent className="p-4 flex items-start">
                     <div className="bg-gray-100 p-2 rounded-lg mr-3 flex-shrink-0">

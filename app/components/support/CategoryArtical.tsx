@@ -1,13 +1,16 @@
 import { Card, CardContent } from "~/components/ui/card"
 import { FileText, ArrowRight } from "lucide-react"
-import { Link } from "@remix-run/react"
+import { Link, useLocation } from "@remix-run/react"
 
 interface CategoryArticlesProps {
   category: string
 }
+// { category }: CategoryArticlesProps
 
-export default function CategoryArticles({ category }: CategoryArticlesProps) {
+export default function CategoryArticles() {
   // This would typically come from a database or API
+  let location = useLocation().pathname;
+  let category = location.split("/")?.[location.split("/").length -1]
   const articlesByCategory = {
     announcements: [
       { title: "Platform Update: New Features for Q2 2025", date: "April 1, 2025" },
@@ -94,7 +97,7 @@ export default function CategoryArticles({ category }: CategoryArticlesProps) {
           {articles.map((article, index) => (
             <Link
               key={index}
-              to={`/support/${category}/${article.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
+              to={`/services/supports/${category}/${article.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
               className="block group"
             >
               <Card className="border-0 shadow-sm hover:shadow-md transition-shadow h-full">

@@ -47,10 +47,10 @@ import {
     }
   
     return (
-      <section className={`${color} py-12 md:py-16`}>
+      <section className={`${color} py-8 md:py-12`}>
         <div className="container mx-auto px-4">
           <div className="flex items-center text-white text-sm mb-4">
-            <Link to="/support" className="hover:underline">
+            <Link to="/services/supports" className="hover:underline">
               Help Center
             </Link>
             <ChevronRight className="h-4 w-4 mx-2" />
