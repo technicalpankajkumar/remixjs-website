@@ -26,27 +26,27 @@ export function ExperienceSection() {
                 clientele.
               </p>
 
-              <Button className="bg-red-500 hover:bg-red-600 text-white font-medium px-8 py-4 h-auto">
+              <Button className="bg-slate-900 hover:bg-slate-800 text-white font-medium px-8 py-2 h-auto shadow-md ">
                 CONTACT US TODAY
               </Button>
             </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <Card className="bg-white border-2 border-red-500 shadow-lg">
+            <Card className="bg-white border-2 border-slate-800 shadow-lg">
               <CardContent className="p-6 flex flex-col items-center justify-center text-center">
                 <h3 className="text-5xl font-bold text-slate-800 mb-2">+120</h3>
                 <p className="text-slate-600">Projects</p>
               </CardContent>
             </Card>
-            <Card className="bg-white border-2 border-red-500 shadow-lg">
+            <Card className="bg-white border-2 border-slate-800 shadow-lg">
               <CardContent className="p-6 flex flex-col items-center justify-center text-center">
                 <h3 className="text-5xl font-bold text-slate-800 mb-2">+5</h3>
                 <p className="text-slate-600">Countries</p>
               </CardContent>
             </Card>
 
-            <Card className="bg-white border-2 border-red-500 shadow-lg ">
+            <Card className="bg-white border-2 border-slate-800 shadow-lg ">
               <CardContent className="p-6 flex flex-col items-center justify-center text-center">
                 <h3 className="text-5xl font-bold text-slate-800 mb-2">17+</h3>
                 <p className="text-slate-600">Years of Experience</p>

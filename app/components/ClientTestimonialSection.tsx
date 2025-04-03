@@ -46,7 +46,7 @@ export function ClientTestimonialSection() {
             <Card className="border-none shadow-lg">
               <CardContent className="pt-8 px-8">
                 <div className="flex flex-col items-center text-center">
-                  <Quote className="h-12 w-12 text-red-500 mb-6" />
+                  <Quote className="h-12 w-12 text-slate-800 mb-6" />
                   <p className="text-xl text-slate-700 italic mb-8">"{testimonials[activeIndex].quote}"</p>
                   <Avatar className="h-16 w-16 mb-4">
                     <AvatarImage src={testimonials[activeIndex].avatar} alt={testimonials[activeIndex].author} />
@@ -71,7 +71,7 @@ export function ClientTestimonialSection() {
             <Card className="border-none shadow-lg">
               <CardContent className="pt-6 px-6">
                 <div className="flex flex-col items-center text-center">
-                  <Quote className="h-8 w-8 text-red-500 mb-4" />
+                  <Quote className="h-8 w-8 text-slate-800 mb-4" />
                   <p className="text-lg text-slate-700 italic mb-6">"{testimonials[activeIndex].quote}"</p>
                   <Avatar className="h-12 w-12 mb-3">
                     <AvatarImage src={testimonials[activeIndex].avatar} alt={testimonials[activeIndex].author} />
@@ -98,7 +98,7 @@ export function ClientTestimonialSection() {
                 key={index}
                 onClick={() => setActiveIndex(index)}
                 className={`h-3 w-3 rounded-full transition-all ${
-                  activeIndex === index ? "bg-red-500 w-6" : "bg-gray-300"
+                  activeIndex === index ? "bg-slate-800 w-6" : "bg-gray-300"
                 }`}
                 aria-label={`View testimonial ${index + 1}`}
               />

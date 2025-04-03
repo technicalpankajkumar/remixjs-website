@@ -10,7 +10,7 @@ export function TechnologySection() {
             {/* Section header */}
             <div className="mb-8">
               <div className="flex items-center mb-4">
-                <div className="h-1 w-12 bg-red-500 mr-4"></div>
+                <div className="h-1 w-12 bg-slate-800 mr-4"></div>
                 <p className="text-slate-700 text-lg">Technology</p>
               </div>
 
@@ -24,7 +24,7 @@ export function TechnologySection() {
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <Button asChild className="bg-red-500 hover:bg-red-600 text-white font-medium px-6">
+                <Button asChild className="bg-slate-800 hover:bg-slate-700 text-white font-medium px-6">
                   <Link to="#solutions">Our Solutions</Link>
                 </Button>
 

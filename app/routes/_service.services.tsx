@@ -47,11 +47,11 @@ const Index = () => {
                     </div>
                     <div className="relative z-10 p-8 md:p-12">
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">{location.pathname == "/services/customapplication" ? "Book Demo For Custom Applications" : "Book Demo For SaaS"}</h2>
-                        <div className="h-1 w-24 bg-red-500 mb-4"></div>
+                        <div className="h-1 w-24 bg-slate-800 mb-4"></div>
                         <p className="text-gray-300 text-lg max-w-3xl">
                           { " We specialize in delivering innovative automation solutions tailored to your unique needs. Our expert team leverages cutting-edge technologies to automate repetitive tasks, optimize workflows, and drive digital transformation."}
                         </p>
-                        <Button asChild className="bg-red-600 hover:bg-red-600 text-white font-medium px-6 py-2 h-auto mt-2">
+                        <Button asChild className="bg-slate-700 hover:bg-slate-700 text-white font-medium px-6 py-2 h-auto mt-2">
                             <Link to="/contactus">Book Demo</Link>
                         </Button>
                     </div>
@@ -66,7 +66,7 @@ const Index = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 place-items-center">
                     <div>
                         <div className="flex items-center mb-4">
-                            <div className="h-1 w-12 bg-red-500 mr-4"></div>
+                            <div className="h-1 w-12 bg-slate-800 mr-4"></div>
                             <p className="text-slate-700 text-lg">Our Services</p>
                         </div>
 
@@ -103,7 +103,7 @@ const Index = () => {
                     </div>
                     <div>
                         <div className="flex items-center mb-4">
-                            <div className="h-1 w-12 bg-red-500 mr-4"></div>
+                            <div className="h-1 w-12 bg-slate-800 mr-4"></div>
                             <p className="text-slate-700 text-lg">Our Software's</p>
                         </div>
 
@@ -131,7 +131,7 @@ const Index = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     <div>
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Our Service Offering</h2>
-                        <div className="h-1 w-16 bg-red-500 mb-6"></div>
+                        <div className="h-1 w-16 bg-slate-800 mb-6"></div>
                         <p className="text-gray-300 text-lg mb-8">
                             Our application services help you achieve your business goals. We design and develop custom applications
                             that streamline operations, improve decision-making, and enhance customer experiences.
@@ -149,15 +149,15 @@ const Index = () => {
                                     onClick={() => setActiveService(service.id)}
                                 >
                                     <div className="flex items-center">
-                                        <div className={`mr-3 text-gray-950 ${activeService === service.id ? "text-red-500" : ""}`}>
+                                        <div className={`mr-3 text-gray-950 ${activeService === service.id ? "text-slate-800" : ""}`}>
                                             {service.icon}
                                         </div>
-                                        <h3 className={`font-medium ${activeService === service.id ? "text-red-500" : "text-white"}`}>
+                                        <h3 className={`font-medium ${activeService === service.id ? "text-slate-800" : "text-white"}`}>
                                             {service.title}
                                         </h3>
                                     </div>
                                     <ChevronRight
-                                        className={`h-5 w-5 transition-transform ${activeService === service.id ? "rotate-90 text-red-500" : "text-slate-400"
+                                        className={`h-5 w-5 transition-transform ${activeService === service.id ? "rotate-90 text-slate-800" : "text-slate-400"
                                             }`}
                                     />
                                 </div>

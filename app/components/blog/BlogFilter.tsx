@@ -137,7 +137,7 @@ export function BlogFilter() {
               variant="ghost"
               size="sm"
               onClick={clearAllFilters}
-              className="text-xs text-slate-500 hover:text-red-500 h-7"
+              className="text-xs text-slate-500 hover:text-slate-800 h-7"
             >
               Clear All
             </Button>

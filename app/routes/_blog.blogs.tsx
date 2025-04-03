@@ -124,7 +124,7 @@ export default function Index() {
               )}
               <div className={`p-6 ${post.image ? "md:col-span-3" : "md:col-span-4"}`}>
                 <Link to={`/post/${post.slug}`} className="group">
-                  <h2 className="text-xl md:text-2xl font-bold text-slate-800 mb-2 group-hover:text-red-500 transition-colors">
+                  <h2 className="text-xl md:text-2xl font-bold text-slate-800 mb-2 group-hover:text-slate-800 transition-colors">
                     {post.title}
                   </h2>
                 </Link>
@@ -148,7 +148,7 @@ export default function Index() {
 
                 <Link
                   to={`/post/${post.slug}`}
-                  className="text-red-500 hover:text-red-600 font-medium inline-flex items-center"
+                  className="text-slate-800 hover:text-slate-700 font-medium inline-flex items-center"
                 >
                   Read More <ChevronRight className="h-4 w-4 ml-1" />
                 </Link>
@@ -167,7 +167,7 @@ export default function Index() {
               variant={currentPage === index + 1 ? "default" : "outline"}
               size="sm"
               onClick={() => setCurrentPage(index + 1)}
-              className={currentPage === index + 1 ? "bg-red-500 hover:bg-red-600" : ""}
+              className={currentPage === index + 1 ? "bg-slate-800 hover:bg-slate-700" : ""}
             >
               {index + 1}
             </Button>

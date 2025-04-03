@@ -53,9 +53,9 @@ export default function SupportCategories() {
     {
       title: "Safety Center",
       description: "Keep your account and community safe and secure.",
-      icon: <ShieldCheck className="h-8 w-8 text-red-500" />,
+      icon: <ShieldCheck className="h-8 w-8 text-slate-800" />,
       href: "/services/supports/safety",
-      color: "bg-red-100",
+      color: "bg-slate-900",
     },
     {
       title: "Billing",

@@ -9,7 +9,7 @@ export function StrategySection() {
             {/* Section header */}
             <div className="mb-8">
               <div className="flex items-center mb-4">
-                <div className="h-1 w-12 bg-red-500 mr-4"></div>
+                <div className="h-1 w-12 bg-slate-800 mr-4"></div>
                 <p className="text-slate-700 text-lg">Our Strategy</p>
               </div>
 
@@ -23,7 +23,7 @@ export function StrategySection() {
                 support you every step of the way.
               </p>
 
-              <Button className="bg-red-500 hover:bg-red-600 text-white font-medium px-8 py-2 h-auto">
+              <Button className="bg-slate-800 hover:bg-slate-700 text-white font-medium px-8 py-2 h-auto">
                 START TODAY
               </Button>
             </div>

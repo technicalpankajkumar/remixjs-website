@@ -17,7 +17,7 @@ const MainLayout = () => {
     <div className="bg-white flex flex-wrap justify-between items-center lg:justify-around p-2 md:p-4 sticky top-0 z-50">
         <span className="text-2xl font-bold">
           <span className="text-blue-400">SG</span>
-          <span className="text-red-500 ms-1">TECH</span>
+          <span className="text-slate-800 ms-1">TECH</span>
           <span className="ms-1 text-gray-400">Technology</span>
         </span>
         {/* navigation */}

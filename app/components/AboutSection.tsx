@@ -14,11 +14,11 @@ export function AboutSection() {
               {/* Section header */}
               <div className="mb-8">
                 <div className="flex items-center mb-4">
-                  <div className="h-1 w-12 bg-red-500 mr-4"></div>
+                  <div className="h-1 w-12 bg-slate-900 mr-4"></div>
                   <p className="text-slate-700 text-lg">Our strategy</p>
                 </div>
 
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-800 mb-6">
                   About SG Tech Technology
                 </h2>
 
@@ -31,7 +31,7 @@ export function AboutSection() {
                   reliable, and scalable solutions.
                 </p>
 
-                <Button className="bg-red-500 hover:bg-red-600 text-white font-medium px-8 py-6 h-auto">
+                <Button className="bg-slate-900 hover:bg-slate-800 text-white font-medium px-8 py-2 h-auto">
                   START TODAY
                 </Button>
               </div>
@@ -46,7 +46,7 @@ export function AboutSection() {
                 />
               </div>
 
-              <Card className="bg-white border-t-4 border-t-red-500 shadow-lg -mt-16 ml-8 max-w-md relative z-10">
+              <Card className="bg-white border-t-4 border-t-slate-800 shadow-lg -mt-16 ml-8 max-w-md relative z-10">
                 <CardContent className="p-6">
                   <blockquote className="text-slate-600 italic mb-4">
                     "It is rare to find Commerce Cloud development agencies that just understand your requirements from
@@ -54,18 +54,18 @@ export function AboutSection() {
                   </blockquote>
 
                   <div className="flex items-center">
-                    <Avatar className="h-12 w-12 mr-4 border-2 border-red-500">
+                    <Avatar className="h-12 w-12 mr-4 border-2 border-slate-800">
                       <AvatarImage src="/placeholder.svg?height=50&width=50" alt="Akshay" />
                       <AvatarFallback>AK</AvatarFallback>
                     </Avatar>
 
                     <div>
-                      <p className="font-bold text-red-500">Akshay</p>
+                      <p className="font-bold text-slate-800">Akshay</p>
                       <p className="text-sm text-slate-500">Project: Zinrelo</p>
                     </div>
                   </div>
 
-                  <div className="mt-4 h-1 w-full bg-red-500 opacity-30"></div>
+                  <div className="mt-4 h-1 w-full bg-slate-800 opacity-30"></div>
                 </CardContent>
               </Card>
             </div>

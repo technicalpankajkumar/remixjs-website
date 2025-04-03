@@ -8,11 +8,11 @@ export function FurtureVisionSection() {
         {/* Section header */}
         <div className="mb-12">
           <div className="flex items-center mb-4">
-            <div className="h-1 w-12 bg-red-500 mr-4"></div>
+            <div className="h-1 w-12 bg-slate-800 mr-4"></div>
             <p className="text-slate-700 text-lg">Vision For The Future</p>
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-red-500 mb-6">What We Do?</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-6">What We Do?</h2>
 
           <p className="text-slate-600 max-w-4xl text-lg">
             At SG Tech, we offer a broad spectrum of services, from custom website design to the development of
@@ -44,7 +44,7 @@ export function FurtureVisionSection() {
               achieve sustainable growth.
             </p>
 
-            <div className="h-1 w-full bg-red-500"></div>
+            <div className="h-1 w-full bg-slate-800"></div>
           </div>
         </div>
 
@@ -74,7 +74,7 @@ export function FurtureVisionSection() {
                   "Our clients' success is our priority, and we tailor our solutions to meet their specific needs.",
               },
             ].map((value, index) => (
-              <Card key={index} className="border-t-4 border-t-red-500">
+              <Card key={index} className="border-t-4 border-t-slate-800">
                 <CardContent className="p-6">
                   <h4 className="text-xl font-bold text-slate-800 mb-3">{value.title}</h4>
                   <p className="text-slate-600">{value.description}</p>
@@ -112,7 +112,7 @@ export function FurtureVisionSection() {
                 "Big Data Analytics",
               ].map((tech, index) => (
                 <div key={index} className="bg-white p-4 rounded-lg shadow flex items-center">
-                  <div className="h-3 w-3 rounded-full bg-red-500 mr-3"></div>
+                  <div className="h-3 w-3 rounded-full bg-slate-800 mr-3"></div>
                   <p className="text-slate-700 font-medium">{tech}</p>
                 </div>
               ))}

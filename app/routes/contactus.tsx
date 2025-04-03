@@ -69,15 +69,15 @@ export default function ContactUs() {
                 <h3 className="text-lg font-bold text-slate-800 mb-4">REACH US THROUGH(INDIA)</h3>
                 <div className="space-y-4">
                   <div className="flex items-start">
-                    <div className="text-red-500 mr-3">📍</div>
+                    <div className="text-slate-800 mr-3">📍</div>
                     <p className="text-slate-600">Kerakat Jaunpur Uttar Pradesh</p>
                   </div>
                   <div className="flex items-start">
-                    <div className="text-red-500 mr-3">📞</div>
+                    <div className="text-slate-800 mr-3">📞</div>
                     <p className="text-slate-600">+91-6393539704, +91-6393539704</p>
                   </div>
                   <div className="flex items-start">
-                    <div className="text-red-500 mr-3">✉️</div>
+                    <div className="text-slate-800 mr-3">✉️</div>
                     <p className="text-slate-600">sgtechtechnology@gmail.com</p>
                   </div>
                 </div>
@@ -87,17 +87,17 @@ export default function ContactUs() {
                 <h3 className="text-lg font-bold text-slate-800 mb-4">REACH US THROUGH (INDIA)</h3>
                 <div className="space-y-4">
                   <div className="flex items-start">
-                    <div className="text-red-500 mr-3">📍</div>
+                    <div className="text-slate-800 mr-3">📍</div>
                     <p className="text-slate-600">
                       Saraimeer Azamgarh Uttar Pradesh 
                     </p>
                   </div>
                   <div className="flex items-start">
-                    <div className="text-red-500 mr-3">📞</div>
+                    <div className="text-slate-800 mr-3">📞</div>
                     <p className="text-slate-600">+91 6393539704</p>
                   </div>
                   <div className="flex items-start">
-                    <div className="text-red-500 mr-3">✉️</div>
+                    <div className="text-slate-800 mr-3">✉️</div>
                     <p className="text-slate-600">sgtechtechnology@gmail.com</p>
                   </div>
                 </div>
@@ -130,7 +130,7 @@ export default function ContactUs() {
           <div>
             <div className="bg-white rounded-lg shadow-md p-8">
               <h3 className="text-2xl font-bold text-slate-800 mb-6">Get In Touch!</h3>
-              <div className="h-1 w-16 bg-red-500 mb-8"></div>
+              <div className="h-1 w-16 bg-slate-800 mb-8"></div>
 
               <form onSubmit={handleSubmit}>
                 <div className="space-y-6">
@@ -200,7 +200,7 @@ export default function ContactUs() {
 
                   <Button
                     type="submit"
-                    className="w-full bg-red-500 hover:bg-red-600 text-white font-medium py-3 h-auto"
+                    className="w-full bg-slate-800 hover:bg-slate-700 text-white font-medium py-3 h-auto"
                   >
                     Submit
                   </Button>

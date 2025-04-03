@@ -51,7 +51,7 @@ export function ServicesSection() {
         {/* Section header */}
         <div className="mb-12">
           <div className="flex items-center mb-4">
-            <div className="h-1 w-12 bg-red-500 mr-4"></div>
+            <div className="h-1 w-12 bg-slate-800 mr-4"></div>
             <p className="text-white text-lg">Our Services</p>
           </div>
 
@@ -74,7 +74,7 @@ export function ServicesSection() {
                 <p className="text-slate-600 text-sm">{service.description}</p>
               </CardContent>
               <CardFooter className="flex justify-center pb-6">
-                <Link to="#" className="text-red-500 hover:text-red-600 font-medium">
+                <Link to="#" className="text-slate-800 hover:text-slate-700 font-medium">
                   Read More
                 </Link>
               </CardFooter>
@@ -91,7 +91,7 @@ export function ServicesSection() {
               <p className="text-slate-600 text-sm">{services[currentSlide].description}</p>
             </CardContent>
             <CardFooter className="flex justify-center pb-6">
-              <Link to="#" className="text-red-500 hover:text-red-600 font-medium">
+              <Link to="#" className="text-slate-800 hover:text-slate-700 font-medium">
                 Read More
               </Link>
             </CardFooter>
@@ -99,7 +99,7 @@ export function ServicesSection() {
 
           <button
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 bg-red-500 text-white p-2 rounded-full"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 bg-slate-800 text-white p-2 rounded-full"
             aria-label="Previous service"
           >
             <ChevronLeft className="h-6 w-6" />
@@ -107,7 +107,7 @@ export function ServicesSection() {
 
           <button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 bg-red-500 text-white p-2 rounded-full"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 bg-slate-800 text-white p-2 rounded-full"
             aria-label="Next service"
           >
             <ChevronRight className="h-6 w-6" />
@@ -118,7 +118,7 @@ export function ServicesSection() {
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`h-2 w-2 rounded-full ${currentSlide === index ? "bg-red-500" : "bg-gray-300"}`}
+                className={`h-2 w-2 rounded-full ${currentSlide === index ? "bg-slate-800" : "bg-gray-300"}`}
                 aria-label={`Go to slide ${index + 1}`}
               />
             ))}

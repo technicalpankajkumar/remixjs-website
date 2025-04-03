@@ -178,7 +178,7 @@ export function Navbar() {
                     <Link to="/" className="flex items-center">
                     <span className="text-2xl font-bold">
                       <span className="text-blue-400">SG</span>
-                      <span className="text-red-500 ms-1">TECH</span>
+                      <span className="text-slate-800 ms-1">TECH</span>
                       <span className="ms-1 text-gray-400">Technology</span>
                     </span>
                     </Link>
@@ -236,8 +236,8 @@ export function Navbar() {
                                       to={item.to}
                                       className={`flex py-2 px-3 text-sm rounded-md transition-colors ${
                                         activeLink === item.to
-                                          ? "bg-red-50 text-red-500 font-medium"
-                                          : "text-slate-600 hover:bg-gray-100 hover:text-red-500"
+                                          ? "bg-slate-50 text-slate-800 font-medium"
+                                          : "text-slate-600 hover:bg-gray-100 hover:text-slate-800"
                                       }`}
                                       onClick={() => handleLinkClick(item.to)}
                                     >
@@ -253,8 +253,8 @@ export function Navbar() {
                               to={link.to}
                               className={`flex items-center px-4 py-3 font-medium transition-colors ${
                                 activeLink === link.to
-                                  ? "bg-gray-50 text-red-500"
-                                  : "text-slate-800 hover:bg-gray-50 hover:text-red-500"
+                                  ? "bg-gray-50 text-slate-800"
+                                  : "text-slate-800 hover:bg-gray-50 hover:text-slate-800"
                               }`}
                               onClick={() => handleLinkClick(link.to)}
                             >
@@ -270,7 +270,7 @@ export function Navbar() {
                   <div className="p-4 border-t">
                     <Link to={'/contactus'}>
                     <Button
-                      className="w-full bg-red-500 hover:bg-red-600 text-white"
+                      className="w-full bg-slate-800 hover:bg-slate-700 text-white"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       CONTACT US

@@ -8,7 +8,7 @@ export function VisionSection() {
         {/* Section header */}
         <div className="mb-12">
           <div className="flex items-center mb-4">
-            <div className="h-1 w-12 bg-red-500 mr-4"></div>
+            <div className="h-1 w-12 bg-slate-800 mr-4"></div>
             <p className="text-slate-700 text-lg">Vision For The Future</p>
           </div>
 
@@ -34,43 +34,43 @@ export function VisionSection() {
           </div>
 
           <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="border-t-4 border-t-red-500">
+            <Card className="border-t-4 border-t-slate-800">
               <CardContent className="pt-6">
                 <h3 className="text-xl font-bold mb-3 text-slate-800">Dedicated Support</h3>
                 <p className="text-slate-600">
                   At every stage of your journey, our team provides personalized support and expertise to ensure your
                   success.
                 </p>
-                <div className="mt-6 h-1 w-full bg-red-500"></div>
+                <div className="mt-6 h-1 w-full bg-slate-800"></div>
               </CardContent>
             </Card>
 
-            <Card className="border-t-4 border-t-red-500">
+            <Card className="border-t-4 border-t-slate-800">
               <CardContent className="pt-6">
                 <h3 className="text-xl font-bold mb-3 text-slate-800">Expert Advisors</h3>
                 <p className="text-slate-600">
                   Gain access to industry leaders who offer customized solutions in IT, marketing, finance, and more to
                   keep you ahead of the curve.
                 </p>
-                <div className="mt-6 h-1 w-full bg-red-500"></div>
+                <div className="mt-6 h-1 w-full bg-slate-800"></div>
               </CardContent>
             </Card>
 
-            <Card className="border-t-4 border-t-red-500">
+            <Card className="border-t-4 border-t-slate-800">
               <CardContent className="pt-6">
                 <h3 className="text-xl font-bold mb-3 text-slate-800">Market Research</h3>
                 <p className="text-slate-600">
                   Our in-depth market research and insights equip you with the knowledge to seize opportunities and make
                   informed decisions.
                 </p>
-                <div className="mt-6 h-1 w-full bg-red-500"></div>
+                <div className="mt-6 h-1 w-full bg-slate-800"></div>
               </CardContent>
             </Card>
           </div>
         </div>
 
         <div className="flex justify-end">
-          <Button className="bg-red-500 hover:bg-red-600 text-white font-medium px-8 py-2 h-auto">ABOUT US</Button>
+          <Button className="bg-slate-800 hover:bg-slate-700 text-white font-medium px-8 py-2 h-auto">ABOUT US</Button>
         </div>
       </div>
     </section>

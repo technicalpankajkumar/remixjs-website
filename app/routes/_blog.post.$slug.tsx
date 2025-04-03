@@ -132,7 +132,7 @@ export default function Post() {
                 <ul className="space-y-2 text-sm">
                   {tableOfContents.map((item) => (
                     <li key={item.id}>
-                      <a href={`#${item.id}`} className="text-slate-600 hover:text-red-500 transition-colors">
+                      <a href={`#${item.id}`} className="text-slate-600 hover:text-slate-800 transition-colors">
                         {item.title}
                       </a>
                     </li>
@@ -230,17 +230,17 @@ export default function Post() {
           {/* Post navigation */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Link to="/post/what-is-cloud-native" className="group">
-              <div className="p-4 border border-gray-200 rounded-lg hover:border-red-500 transition-colors">
+              <div className="p-4 border border-gray-200 rounded-lg hover:border-slate-800 transition-colors">
                 <span className="text-sm text-gray-500">Previous Post</span>
-                <h4 className="font-medium text-slate-800 group-hover:text-red-500 transition-colors">
+                <h4 className="font-medium text-slate-800 group-hover:text-slate-800 transition-colors">
                   What Is Cloud Native? Benefits, Technologies, and Why It Matters
                 </h4>
               </div>
             </Link>
             <Link to="/post/microsoft-to-shut-down-skype-permanently" className="group">
-              <div className="p-4 border border-gray-200 rounded-lg hover:border-red-500 transition-colors text-right">
+              <div className="p-4 border border-gray-200 rounded-lg hover:border-slate-800 transition-colors text-right">
                 <span className="text-sm text-gray-500">Next Post</span>
-                <h4 className="font-medium text-slate-800 group-hover:text-red-500 transition-colors">
+                <h4 className="font-medium text-slate-800 group-hover:text-slate-800 transition-colors">
                   Microsoft to Shut Down Skype Permanently – End of an Era!
                 </h4>
               </div>

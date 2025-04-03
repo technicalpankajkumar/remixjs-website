@@ -64,7 +64,7 @@ const Index = () => {
 
                     <div className="space-y-8">
                         <div className="flex gap-4">
-                            <CheckSquare className="h-6 w-6 text-red-500 flex-shrink-0" />
+                            <CheckSquare className="h-6 w-6 text-slate-800 flex-shrink-0" />
                             <div>
                                 <h3 className="text-xl font-bold text-slate-800 mb-2">Enhanced Efficiency</h3>
                                 <p className="text-slate-600">Streamline workflows, automate tasks, and reduce errors.</p>
@@ -72,7 +72,7 @@ const Index = () => {
                         </div>
 
                         <div className="flex gap-4">
-                            <CheckSquare className="h-6 w-6 text-red-500 flex-shrink-0" />
+                            <CheckSquare className="h-6 w-6 text-slate-800 flex-shrink-0" />
                             <div>
                                 <h3 className="text-xl font-bold text-slate-800 mb-2">Increased Productivity</h3>
                                 <p className="text-slate-600">Empower your team with user-friendly tools that boost productivity.</p>
@@ -80,7 +80,7 @@ const Index = () => {
                         </div>
 
                         <div className="flex gap-4">
-                            <CheckSquare className="h-6 w-6 text-red-500 flex-shrink-0" />
+                            <CheckSquare className="h-6 w-6 text-slate-800 flex-shrink-0" />
                             <div>
                                 <h3 className="text-xl font-bold text-slate-800 mb-2">Improved Decision-Making</h3>
                                 <p className="text-slate-600">Gain valuable insights from data-driven analytics and reporting.</p>
@@ -88,7 +88,7 @@ const Index = () => {
                         </div>
 
                         <div className="flex gap-4">
-                            <CheckSquare className="h-6 w-6 text-red-500 flex-shrink-0" />
+                            <CheckSquare className="h-6 w-6 text-slate-800 flex-shrink-0" />
                             <div>
                                 <h3 className="text-xl font-bold text-slate-800 mb-2">Competitive Advantage</h3>
                                 <p className="text-slate-600">Differentiate your business with unique features and functionalities.</p>

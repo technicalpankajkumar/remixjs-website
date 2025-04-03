@@ -76,7 +76,7 @@ export function BlogSidebar() {
                     </div>
                   </div>
                   <div>
-                    <h4 className="text-sm font-medium text-slate-800 group-hover:text-red-500 transition-colors">
+                    <h4 className="text-sm font-medium text-slate-800 group-hover:text-slate-800 transition-colors">
                       {post.title}
                     </h4>
                   </div>
@@ -102,7 +102,7 @@ export function BlogSidebar() {
                 We'd love to hear about your project! Feel free to reach out to us via email at sgtechtechnology@gmail.com,
                 or simply fill out the contact form below.
               </p>
-              <Button asChild className="bg-red-500 hover:bg-red-600 text-white">
+              <Button asChild className="bg-slate-800 hover:bg-slate-700 text-white">
                 <Link to="/contactus">Connect Now</Link>
               </Button>
             </div>

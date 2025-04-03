@@ -10,7 +10,7 @@ export function HeroSection() {
       <div className="container relative z-10 mx-auto px-4 py-16 md:py-24 lg:py-32">
         <div className="">
           <div className="flex items-center mb-4">
-            <div className="h-1 w-12 bg-red-500 mr-4"></div>
+            <div className="h-1 w-12 bg-slate-800 mr-4"></div>
             <p className="text-white text-lg">Welcome to SG Tech Technology</p>
           </div>
 
@@ -19,7 +19,7 @@ export function HeroSection() {
           </h1>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button asChild className="bg-red-800">
+            <Button asChild className="bg-slate-900">
               <Link to="#industries">INDUSTRIES</Link>
             </Button>
 

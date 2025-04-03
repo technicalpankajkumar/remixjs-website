@@ -103,11 +103,11 @@ export default function BlogComments() {
                   </div>
                   <p className="text-slate-600 mb-3">{comment.content}</p>
                   <div className="flex items-center gap-4 text-sm">
-                    <Button variant="ghost" size="sm" className="text-gray-500 hover:text-red-500">
+                    <Button variant="ghost" size="sm" className="text-gray-500 hover:text-slate-800">
                       <ThumbsUp className="h-4 w-4 mr-1" />
                       <span>{comment.likes}</span>
                     </Button>
-                    <Button variant="ghost" size="sm" className="text-gray-500 hover:text-red-500">
+                    <Button variant="ghost" size="sm" className="text-gray-500 hover:text-slate-800">
                       <MessageSquare className="h-4 w-4 mr-1" />
                       <span>Reply</span>
                     </Button>
@@ -142,7 +142,7 @@ export default function BlogComments() {
                             </div>
                             <p className="text-slate-600 text-sm">{reply.content}</p>
                             <div className="flex items-center gap-4 text-xs mt-2">
-                              <Button variant="ghost" size="sm" className="h-6 text-gray-500 hover:text-red-500">
+                              <Button variant="ghost" size="sm" className="h-6 text-gray-500 hover:text-slate-800">
                                 <ThumbsUp className="h-3 w-3 mr-1" />
                                 <span>{reply.likes}</span>
                               </Button>
@@ -168,14 +168,14 @@ export default function BlogComments() {
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">
-              Name<span className="text-red-500">*</span>
+              Name<span className="text-slate-800">*</span>
             </label>
             <Input id="name" name="name" value={formData.name} onChange={handleChange} required className="w-full" />
           </div>
 
           <div>
             <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">
-              Email<span className="text-red-500">*</span>
+              Email<span className="text-slate-800">*</span>
             </label>
             <Input
               id="email"
@@ -197,7 +197,7 @@ export default function BlogComments() {
 
           <div>
             <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1">
-              Message<span className="text-red-500">*</span>
+              Message<span className="text-slate-800">*</span>
             </label>
             <Textarea
               id="message"
@@ -210,7 +210,7 @@ export default function BlogComments() {
             />
           </div>
 
-          <Button type="submit" className="bg-red-500 hover:bg-red-600 text-white">
+          <Button type="submit" className="bg-slate-800 hover:bg-slate-700 text-white">
             Submit
           </Button>
         </form>
