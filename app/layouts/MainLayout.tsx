@@ -14,7 +14,7 @@ const MainLayout = () => {
       <p className="flex gap-2 items-center"> <Mail size={15}/> <span>sgtechtechnology@gmail.com</span></p>
       <p className="flex gap-2 items-center"> <Locate size={15}/> <span>Kerakat Jaunpur Uttar Pradesh</span></p>
     </div>
-    <div className="bg-white flex flex-wrap justify-between items-center lg:justify-around p-2 md:p-4 sticky top-0 z-50">
+    <div className="bg-white flex flex-wrap justify-between items-center lg:justify-around p-2 md:p-4 sticky top-0 z-50 border-b shadow-sm">
         <span className="text-2xl font-bold">
           <span className="text-blue-400">SG</span>
           <span className="text-slate-800 ms-1">TECH</span>

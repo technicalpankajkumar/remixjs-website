@@ -98,7 +98,7 @@ export function Navbar() {
 
   return (
     <>
-    <div className="hidden lg:flex items-center space-x-8">
+    <div className="hidden lg:flex items-center space-x-8 ">
     <NavigationMenu>
       <NavigationMenuList className="flex flex-wrap">
         {

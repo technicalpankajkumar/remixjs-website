@@ -20,19 +20,19 @@ export function BlogSidebar() {
       id: 1,
       slug: "nvidia-unveils-blackwell-ultra-and-vera-rubin",
       title: "NVIDIA Unveils Blackwell Ultra and Vera Rubin: The Next Generation of AI Superchips",
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-WJuNbB1YZtK7bqCwcHBrfN9pbHQusF.png",
+      image: "/assets/supportsimg.jpg",
     },
     {
       id: 2,
       slug: "microsoft-teams-vs-google-workspace",
       title: "Microsoft Teams vs. Google Workspace: A Comprehensive Comparison for Your Business Needs",
-      image: "/placeholder.svg?height=60&width=60",
+      image: "/assets/supportsimg.jpg",
     },
     {
       id: 3,
       slug: "what-is-cloud-native",
       title: "What Is Cloud Native? Benefits, Technologies, and Why It Matters",
-      image: "/placeholder.svg?height=60&width=60",
+      image: "/assets/supportsimg.jpg",
     },
   ]
 
@@ -90,15 +90,15 @@ export function BlogSidebar() {
       {/* Contact Us */}
       <Card className="bg-gray-100 border-none overflow-hidden">
         <CardContent className="p-0">
-          <div className="relative h-60">
+          <div className="relative ">
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-LcVbqKiejDkeziFNtmBUujRnhqXQsV.png"
+              src="/assets/customerservice1.webp"
               alt="Contact Us"
-              className="object-cover"
+              className="object-over "
             />
-            <div className="absolute inset-0 bg-slate-800/70 flex flex-col justify-end p-6">
+            <div className="absolute inset-0 bg-slate-200/10 flex flex-col justify-end p-6">
               <h3 className="text-xl font-bold text-white mb-2">Contact Us</h3>
-              <p className="text-gray-200 text-sm mb-4">
+              <p className="text-sm mb-4 text-white">
                 We'd love to hear about your project! Feel free to reach out to us via email at sgtechtechnology@gmail.com,
                 or simply fill out the contact form below.
               </p>

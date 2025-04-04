@@ -29,7 +29,7 @@ export function Footer() {
             <div className="mb-4">
               <span className="text-2xl font-bold">
                 <span className="text-blue-400">SG</span>
-                <span className="text-slate-800">TECH</span>
+                <span className="text-slate-300 ps-1">TECH</span>
               </span>
               <span className="block text-xs tracking-widest text-gray-400">Technology</span>
             </div>

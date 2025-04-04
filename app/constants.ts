@@ -594,9 +594,6 @@ export const jobData = [
       ],
     },
   ]
-  
-  
-
 export const faqs = [
     {
         question: "What is the typical development timeline for a custom application?",
@@ -624,3 +621,251 @@ export const faqs = [
             "We work with a wide range of modern technologies based on project requirements. For web applications, we commonly use React, Angular, or Vue.js for frontend and Node.js, Python, or .NET for backend. For mobile, we develop native apps using Swift/Kotlin or cross-platform solutions with React Native or Flutter. Our technology recommendations are always based on your specific needs and long-term goals.",
     },
 ]
+
+export const educationIndustory = [
+  {
+    title: "Learning Management System",
+    description:
+      "A comprehensive platform for course creation, student enrollment, assignment management, and progress tracking.",
+    features: [
+      "Interactive course content with multimedia support",
+      "Automated grading and assessment tools",
+      "Real-time analytics and reporting on student performance",
+      "Virtual classroom with video conferencing integration",
+      "Mobile-friendly access for learning on the go",
+      "Discussion forums and collaborative learning tools",
+    ],
+  },
+  {
+    title: "School Management System",
+    description:
+      "An all-in-one solution for educational institutions to manage administrative tasks, student records, and academic processes.",
+    features: [
+      "Admission and enrollment management",
+      "Attendance tracking and reporting",
+      "Fee management and online payment integration",
+      "Parent-teacher communication portal",
+      "Timetable scheduling and management",
+      "Exam management and result processing",
+    ],
+  },
+  {
+    title: "Educational Content Platform",
+    description:
+      "Digital platform for creating, distributing, and consuming educational content across various subjects and grade levels.",
+    features: [
+      "Interactive e-books and learning materials",
+      "Gamified learning experiences with rewards",
+      "Personalized learning paths based on student progress",
+      "Content authoring tools for educators",
+      "Offline access to downloaded content",
+      "Integration with popular learning standards",
+    ],
+  },
+]
+
+export const healthIndustory = [
+  {
+    title: "Hospital Management System",
+    description:
+      "Comprehensive solution for hospitals to manage patient care, administrative tasks, and operational workflows.",
+    features: [
+      "Electronic Medical Records (EMR) management",
+      "Patient appointment scheduling and reminders",
+      "Billing and insurance claim processing",
+      "Pharmacy and inventory management",
+      "Laboratory information system integration",
+      "Staff scheduling and management",
+    ],
+  },
+  {
+    title: "Telemedicine Platform",
+    description:
+      "Virtual healthcare delivery platform connecting patients with healthcare providers for remote consultations.",
+    features: [
+      "Secure video consultations with end-to-end encryption",
+      "Digital prescription generation and delivery",
+      "Patient health monitoring and data sharing",
+      "Integration with wearable health devices",
+      "Appointment scheduling and payment processing",
+      "Medical record access and sharing",
+    ],
+  },
+  {
+    title: "Clinical Decision Support System",
+    description:
+      "AI-powered system that assists healthcare providers in making informed clinical decisions based on patient data.",
+    features: [
+      "Diagnostic assistance with symptom analysis",
+      "Treatment recommendation based on clinical guidelines",
+      "Drug interaction and allergy alerts",
+      "Predictive analytics for patient outcomes",
+      "Evidence-based medicine integration",
+      "Continuous learning from new medical research",
+    ],
+  },
+]
+
+export const fitnessIndustry = [
+  {
+    title: "Gym Management Software",
+    description: "Complete solution for fitness centers to manage memberships, classes, and facility operations.",
+    features: [
+      "Membership management with automated billing",
+      "Class scheduling and attendance tracking",
+      "Staff management and payroll integration",
+      "Equipment maintenance scheduling",
+      "Member check-in and access control",
+      "Performance metrics and business analytics",
+    ],
+  },
+  {
+    title: "Fitness Tracking App",
+    description:
+      "Mobile application for users to track workouts, nutrition, and fitness progress with personalized recommendations.",
+    features: [
+      "Workout plan creation and tracking",
+      "Nutrition logging and meal planning",
+      "Progress visualization with charts and metrics",
+      "Integration with wearable fitness devices",
+      "Community features and challenges",
+      "AI-powered workout recommendations",
+    ],
+  },
+  {
+    title: "Virtual Training Platform",
+    description:
+      "Online platform connecting fitness trainers with clients for virtual training sessions and coaching.",
+    features: [
+      "Live video training sessions with feedback",
+      "On-demand workout library with various categories",
+      "Client progress tracking and assessment tools",
+      "Subscription management and payment processing",
+      "Trainer-client messaging and communication",
+      "Customizable workout program creation",
+    ],
+  },
+]
+
+export const bankAndFinanceIndustry = [
+  {
+    title: "Core Banking System",
+    description:
+      "Centralized banking platform that manages accounts, transactions, and essential banking operations.",
+    features: [
+      "Account management and processing",
+      "Transaction processing and reconciliation",
+      "Interest calculation and fee management",
+      "Regulatory compliance and reporting",
+      "Multi-currency support and exchange",
+      "Loan origination and servicing",
+    ],
+  },
+  {
+    title: "Digital Banking Platform",
+    description:
+      "Omnichannel platform providing customers with seamless banking experiences across web and mobile devices.",
+    features: [
+      "Secure online and mobile banking interfaces",
+      "Bill payment and fund transfer capabilities",
+      "Personal financial management tools",
+      "Biometric authentication and security features",
+      "Push notifications and alerts",
+      "Card management and control",
+    ],
+  },
+  {
+    title: "Fraud Detection System",
+    description:
+      "AI-powered system that monitors transactions in real-time to detect and prevent fraudulent activities.",
+    features: [
+      "Real-time transaction monitoring and analysis",
+      "Behavioral analytics to identify suspicious patterns",
+      "Automated alerts and case management",
+      "Machine learning models that adapt to new fraud tactics",
+      "Multi-factor authentication integration",
+      "Compliance with financial security standards",
+    ],
+  },
+]
+
+export const ecommerceIndustry = [
+  {
+    title: "E-commerce Platform",
+    description: "Complete online store solution with product management, shopping cart, and checkout functionality.",
+    features: [
+      "Product catalog management with variants",
+      "Secure payment gateway integration",
+      "Order management and fulfillment tracking",
+      "Customer account management and wishlist",
+      "SEO optimization tools",
+      "Mobile-responsive storefronts",
+    ],
+  },
+  {
+    title: "Inventory Management System",
+    description: "System for tracking inventory levels, orders, sales, and deliveries for online retailers.",
+    features: [
+      "Real-time inventory tracking across multiple channels",
+      "Automated reordering based on stock thresholds",
+      "Barcode and QR code scanning capabilities",
+      "Warehouse management and location tracking",
+      "Supplier management and purchase orders",
+      "Inventory forecasting and analytics",
+    ],
+  },
+  {
+    title: "Customer Relationship Management",
+    description:
+      "E-commerce focused CRM for managing customer interactions, marketing campaigns, and loyalty programs.",
+    features: [
+      "Customer segmentation and targeting",
+      "Personalized marketing automation",
+      "Customer support ticket management",
+      "Purchase history analysis and recommendations",
+      "Loyalty program management",
+      "Social media integration and monitoring",
+    ],
+  },
+]
+
+export const erpIndustry = [
+  {
+    title: "Enterprise Resource Planning",
+    description: "Integrated management of core business processes in real-time across the entire organization.",
+    features: [
+      "Financial management and accounting",
+      "Human resources and payroll processing",
+      "Supply chain and procurement management",
+      "Business intelligence and reporting",
+      "Asset management and maintenance",
+      "Customer relationship management",
+    ],
+  },
+  {
+    title: "Manufacturing ERP",
+    description:
+      "Specialized ERP system for manufacturing companies to manage production, inventory, and quality control.",
+    features: [
+      "Production planning and scheduling",
+      "Bill of materials and product configuration",
+      "Shop floor control and work order management",
+      "Quality assurance and compliance tracking",
+      "Equipment maintenance and downtime tracking",
+      "Material requirements planning (MRP)",
+    ],
+  },
+  {
+    title: "Project Management ERP",
+    description: "ERP module focused on project planning, execution, and monitoring for service-based organizations.",
+    features: [
+      "Project planning and resource allocation",
+      "Time and expense tracking",
+      "Budget management and cost control",
+      "Client billing and invoicing automation",
+      "Project portfolio management",
+      "Team collaboration and document sharing",
+    ],
+  },
+]
+

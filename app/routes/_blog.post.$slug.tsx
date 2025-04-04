@@ -21,7 +21,7 @@ export default function Post() {
     date: "March 10, 2025",
     author: "SG Tech",
     comments: 0,
-    image: "/placeholder.svg?height=400&width=800",
+    image: "/assets/appdevelopmentsvg.png",
     content: `
       <p class="mb-4">In today's digital-first world, effective collaboration tools are essential for businesses to thrive. Two of the most popular platforms in this space are <strong>Microsoft Teams</strong> and <strong>Google Workspace</strong>. Both offer a wide range of features designed to enhance productivity, streamline communication, and foster teamwork. But which one is the right fit for your business? In this comprehensive comparison, we'll dive deep into the features, user experience, pricing, security, and more to help you make an informed decision.</p>
     `,

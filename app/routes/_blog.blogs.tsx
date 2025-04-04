@@ -15,7 +15,7 @@ const blogPosts = [
     date: "March 19, 2025",
     author: "SG Tech",
     comments: 0,
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-WJuNbB1YZtK7bqCwcHBrfN9pbHQusF.png",
+    image: "/assets/itimg.png",
     category: "Technology",
   },
   {
@@ -27,7 +27,7 @@ const blogPosts = [
     date: "March 10, 2025",
     author: "SG Tech",
     comments: 0,
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/assets/retail.png",
     category: "Business",
   },
   {
@@ -39,7 +39,7 @@ const blogPosts = [
     date: "March 6, 2025",
     author: "SG Tech",
     comments: 0,
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/assets/supportsimg.jpg",
     category: "Technology",
   },
   {
@@ -51,7 +51,7 @@ const blogPosts = [
     date: "March 4, 2025",
     author: "SG Tech",
     comments: 0,
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/assets/transpotation.png",
     category: "Technology",
   },
   {
@@ -63,7 +63,7 @@ const blogPosts = [
     date: "February 19, 2025",
     author: "SG Tech",
     comments: 0,
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/assets/appdevelopment.jpg",
     category: "Web Development",
   },
   {
@@ -75,7 +75,7 @@ const blogPosts = [
     date: "February 5, 2025",
     author: "SG Tech",
     comments: 0,
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-LcVbqKiejDkeziFNtmBUujRnhqXQsV.png",
+    image: "/assets/hms.png",
     category: "Healthcare",
   },
 ]
@@ -110,21 +110,21 @@ export default function Index() {
   return (
     <div>
       {currentPosts.map((post) => (
-        <Card key={post.id} className="mb-6 overflow-hidden border-none shadow-sm hover:shadow-md transition-shadow">
+        <Card key={post.id} className="mb-4 overflow-hidden border shadow-md hover:shadow-lg transition-shadow max-h-56">
           <CardContent className="p-0">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
               {post.image && (
-                <div className="md:col-span-1">
+                <div className="md:col-span-1 flex items-center justify-center">
                   <Link to={`/post/${post.slug}`}>
-                    <div className="relative h-48 md:h-full w-full">
+                    <div className="relative md:h-full w-full">
                       <img src={post.image || "/placeholder.svg"} alt={post.title} className="object-cover" />
                     </div>
                   </Link>
                 </div>
               )}
-              <div className={`p-6 ${post.image ? "md:col-span-3" : "md:col-span-4"}`}>
+              <div className={`px-2 py-4 ${post.image ? "md:col-span-3" : "md:col-span-4"}`}>
                 <Link to={`/post/${post.slug}`} className="group">
-                  <h2 className="text-xl md:text-2xl font-bold text-slate-800 mb-2 group-hover:text-slate-800 transition-colors">
+                  <h2 className="text-lg md:text-xl font-bold text-slate-800 mb-2 group-hover:text-slate-800 transition-colors">
                     {post.title}
                   </h2>
                 </Link>
@@ -144,7 +144,7 @@ export default function Index() {
                   </div>
                 </div>
 
-                <p className="text-slate-600 mb-4">{post.excerpt}</p>
+                <p className="text-slate-600 mb-2">{post.excerpt}</p>
 
                 <Link
                   to={`/post/${post.slug}`}

@@ -51,7 +51,7 @@ export default function ContactUs() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
-            <div className="bg-white rounded-lg overflow-hidden shadow-md">
+            <div className="bg-white rounded-lg overflow-hidden">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.9374825854!2d80.94580491504444!3d26.87105998314688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd7e0a22ab8b%3A0xacc4c1573c9c97e8!2sUnicode%20Systems!5e0!3m2!1sen!2sin!4v1648123456789!5m2!1sen!2sin"
                 width="100%"
@@ -128,12 +128,12 @@ export default function ContactUs() {
           </div>
 
           <div>
-            <div className="bg-white rounded-lg shadow-md p-8">
-              <h3 className="text-2xl font-bold text-slate-800 mb-6">Get In Touch!</h3>
-              <div className="h-1 w-16 bg-slate-800 mb-8"></div>
+            <div className="bg-white rounded-lg shadow-lg border p-8">
+              <h3 className="text-lg md:text-xl font-bold text-slate-800 mb-2">Get In Touch!</h3>
+              <div className="h-1 w-16 bg-slate-800 mb-4"></div>
 
               <form onSubmit={handleSubmit}>
-                <div className="space-y-6">
+                <div className="space-y-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">
                       Your name
