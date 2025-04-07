@@ -624,6 +624,7 @@ export const faqs = [
 
 export const educationIndustory = [
   {
+    imgSrc:"/assets/svg/education_programing.svg",
     title: "Learning Management System",
     description:
       "A comprehensive platform for course creation, student enrollment, assignment management, and progress tracking.",
@@ -637,6 +638,7 @@ export const educationIndustory = [
     ],
   },
   {
+    imgSrc:"/assets/svg/education_group_call.svg",
     title: "School Management System",
     description:
       "An all-in-one solution for educational institutions to manage administrative tasks, student records, and academic processes.",
@@ -650,6 +652,7 @@ export const educationIndustory = [
     ],
   },
   {
+    imgSrc:"/assets/svg/education_study.svg",
     title: "Educational Content Platform",
     description:
       "Digital platform for creating, distributing, and consuming educational content across various subjects and grade levels.",
@@ -791,6 +794,7 @@ export const bankAndFinanceIndustry = [
 
 export const ecommerceIndustry = [
   {
+    imgSrc:"/assets/svg/ecom_online_shop.svg",
     title: "E-commerce Platform",
     description: "Complete online store solution with product management, shopping cart, and checkout functionality.",
     features: [
@@ -803,6 +807,7 @@ export const ecommerceIndustry = [
     ],
   },
   {
+    imgSrc:"/assets/svg/ecom_inventory_management.svg",
     title: "Inventory Management System",
     description: "System for tracking inventory levels, orders, sales, and deliveries for online retailers.",
     features: [
@@ -815,6 +820,7 @@ export const ecommerceIndustry = [
     ],
   },
   {
+    imgSrc:"/assets/svg/ecom_shopping_bag.svg",
     title: "Customer Relationship Management",
     description:
       "E-commerce focused CRM for managing customer interactions, marketing campaigns, and loyalty programs.",
@@ -869,3 +875,123 @@ export const erpIndustry = [
   },
 ]
 
+export const transportationIndustry = [
+  {
+    title: "Fleet Management System",
+    description:
+      "Comprehensive solution for managing vehicle fleets, drivers, maintenance, and logistics operations.",
+    features: [
+      "Real-time vehicle tracking and telematics",
+      "Driver management and compliance",
+      "Fuel monitoring and expense tracking",
+      "Preventive maintenance scheduling",
+      "Route optimization and dispatch",
+      "Safety monitoring and incident reporting",
+    ],
+  },
+  {
+    title: "Logistics Management System",
+    description: "End-to-end solution for managing the movement of goods, warehousing, and supply chain operations.",
+    features: [
+      "Route optimization and planning",
+      "Shipment tracking and delivery management",
+      "Warehouse management and inventory control",
+      "Cross-docking and freight forwarding",
+      "Carrier management and rate comparison",
+      "International shipping documentation",
+    ],
+  },
+  {
+    title: "Public Transport Management",
+    description:
+      "System for managing public transportation networks, schedules, ticketing, and passenger information.",
+    features: [
+      "Route and schedule management",
+      "Electronic ticketing and fare collection",
+      "Real-time passenger information systems",
+      "Transit analytics and performance monitoring",
+      "Fleet maintenance and management",
+      "Driver scheduling and management",
+    ],
+  },
+]
+
+export const telicomIndustry = [
+  {
+    title: "Billing and Revenue Management",
+    description: "System for managing telecom service billing, revenue collection, and subscription management.",
+    features: [
+      "Usage-based billing and rating",
+      "Subscription and plan management",
+      "Payment processing and collections",
+      "Revenue assurance and fraud detection",
+      "Billing cycle management",
+      "Customer self-service billing portal",
+    ],
+  },
+  {
+    title: "Network Management System",
+    description: "Platform for monitoring, managing, and optimizing telecommunications network infrastructure.",
+    features: [
+      "Network performance monitoring",
+      "Fault detection and management",
+      "Configuration and change management",
+      "Capacity planning and optimization",
+      "Security monitoring and management",
+      "Service quality monitoring",
+    ],
+  },
+  {
+    title: "Customer Service Platform",
+    description:
+      "Omnichannel customer service solution for telecom providers to manage customer interactions and support.",
+    features: [
+      "Customer self-service portal",
+      "Trouble ticket management",
+      "Service activation and provisioning",
+      "Customer experience analytics",
+      "Knowledge base and FAQ management",
+      "Chatbot and AI-powered support",
+    ],
+  },
+]
+
+export  const otherIndustry = [
+  {
+    title: "Real Estate Management",
+    description: "Software for managing property listings, tenant relationships, and real estate operations.",
+    features: [
+      "Property listing and marketing",
+      "Tenant and lease management",
+      "Maintenance request tracking",
+      "Financial reporting and analytics",
+      "Document management and e-signatures",
+      "Property inspection and reporting",
+    ],
+  },
+  {
+    title: "Hospitality Management",
+    description:
+      "Comprehensive solution for hotels and resorts to manage reservations, guest services, and operations.",
+    features: [
+      "Reservation and booking management",
+      "Front desk and guest services",
+      "Housekeeping and maintenance",
+      "Revenue management and forecasting",
+      "Point of sale integration",
+      "Guest relationship management",
+    ],
+  },
+  {
+    title: "Agriculture Management",
+    description: "Software for farm management, crop planning, livestock tracking, and agricultural operations.",
+    features: [
+      "Crop planning and field management",
+      "Livestock tracking and health monitoring",
+      "Equipment maintenance and scheduling",
+      "Weather data integration and forecasting",
+      "Supply chain and inventory management",
+      "Financial management and reporting",
+    ],
+  },
+]

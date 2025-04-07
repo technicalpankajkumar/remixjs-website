@@ -1,5 +1,5 @@
 import { Dumbbell } from "lucide-react"
-import IndustrySectionHeader from "./IndustrySectionHeader"
+import IndustrySectionHeader from "./IndustryHeroSection"
 import SoftwareCard from "./SoftwareCard"
 import { fitnessIndustry } from "~/constants"
 

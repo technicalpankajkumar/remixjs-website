@@ -1,5 +1,5 @@
 import { Truck } from "lucide-react"
-import IndustrySectionHeader from "./IndustrySectionHeader"
+import IndustrySectionHeader from "./IndustryHeroSection"
 import SoftwareCard from "./SoftwareCard"
 
 export default function TransportationSection() {

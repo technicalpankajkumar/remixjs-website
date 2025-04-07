@@ -1,6 +1,6 @@
 import { ShoppingCart } from "lucide-react"
 import SoftwareCard from "./SoftwareCard"
-import IndustrySectionHeader from "./IndustrySectionHeader"
+import IndustrySectionHeader from "./IndustryHeroSection"
 import { ecommerceIndustry } from "~/constants"
 
 export default function EcommerceSection() {

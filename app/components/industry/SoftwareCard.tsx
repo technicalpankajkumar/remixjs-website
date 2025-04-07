@@ -3,20 +3,23 @@ import { useState } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card"
 import { Button } from "../ui/button"
 
-export default function SoftwareCard({ title, icon, description, features }:any) {
+export default function SoftwareCard({ title, icon, description, features,imgSrc }:any) {
     const [expanded, setExpanded] = useState(false)
   
     return (
       <Card className="h-full">
-        <CardHeader className="flex flex-row items-center gap-4">
+        <CardHeader className="flex flex-row items-center gap-4 ">
           {icon}
           <div>
             <CardTitle>{title}</CardTitle>
           </div>
         </CardHeader>
         <CardContent>
+        <CardDescription className="w-full flex justify-center">
+          <img src={imgSrc || "/assets/svg/education_educator.svg"} className="object-cover mb-2 h-56"/>
+        </CardDescription>
           <CardDescription className="text-base mb-4">{description}</CardDescription>
-  
+          
           <div className="space-y-4">
             <Button
               variant="outline"

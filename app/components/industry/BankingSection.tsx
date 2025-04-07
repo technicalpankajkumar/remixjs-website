@@ -1,5 +1,5 @@
 import { Building2 } from "lucide-react"
-import IndustrySectionHeader from "./IndustrySectionHeader"
+import IndustrySectionHeader from "./IndustryHeroSection"
 import SoftwareCard from "./SoftwareCard"
 import { bankAndFinanceIndustry } from "~/constants"
 
