@@ -711,6 +711,7 @@ export const healthIndustory = [
 
 export const fitnessIndustry = [
   {
+    imgSrc:"/assets/svg/fitness_gym.svg",
     title: "Gym Management Software",
     description: "Complete solution for fitness centers to manage memberships, classes, and facility operations.",
     features: [
@@ -723,6 +724,7 @@ export const fitnessIndustry = [
     ],
   },
   {
+    imgSrc:"/assets/svg/fitness_yoga.svg",
     title: "Fitness Tracking App",
     description:
       "Mobile application for users to track workouts, nutrition, and fitness progress with personalized recommendations.",
@@ -736,6 +738,7 @@ export const fitnessIndustry = [
     ],
   },
   {
+    imgSrc:"/assets/svg/fitness_online.svg",
     title: "Virtual Training Platform",
     description:
       "Online platform connecting fitness trainers with clients for virtual training sessions and coaching.",
@@ -956,7 +959,7 @@ export const telicomIndustry = [
   },
 ]
 
-export  const otherIndustry = [
+export const otherIndustry = [
   {
     title: "Real Estate Management",
     description: "Software for managing property listings, tenant relationships, and real estate operations.",
