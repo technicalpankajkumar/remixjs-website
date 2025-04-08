@@ -1,5 +1,4 @@
-import { BookOpen, ChevronsRight, Quote } from "lucide-react";
-import { educationIndustory } from "~/constants";
+import { BookOpen, ChevronsRight } from "lucide-react";
 import { Separator } from "../ui/separator";
 
 export default function IndustryHeroSection({ id, title,description, descriptionList, icon , imgSrc}: any) {

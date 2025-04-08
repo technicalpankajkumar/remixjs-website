@@ -669,6 +669,7 @@ export const educationIndustory = [
 
 export const healthIndustory = [
   {
+    imgSrc:"/assets/svg/hospital.svg",
     title: "Hospital Management System",
     description:
       "Comprehensive solution for hospitals to manage patient care, administrative tasks, and operational workflows.",
@@ -682,6 +683,7 @@ export const healthIndustory = [
     ],
   },
   {
+    imgSrc:"/assets/svg/health_injury.svg",
     title: "Telemedicine Platform",
     description:
       "Virtual healthcare delivery platform connecting patients with healthcare providers for remote consultations.",
@@ -695,6 +697,7 @@ export const healthIndustory = [
     ],
   },
   {
+    imgSrc:"/assets/svg/health_doctor.svg",
     title: "Clinical Decision Support System",
     description:
       "AI-powered system that assists healthcare providers in making informed clinical decisions based on patient data.",
@@ -840,6 +843,7 @@ export const ecommerceIndustry = [
 
 export const erpIndustry = [
   {
+    imgSrc:"/assets/svg/erp_dash.svg",
     title: "Enterprise Resource Planning",
     description: "Integrated management of core business processes in real-time across the entire organization.",
     features: [
@@ -852,6 +856,7 @@ export const erpIndustry = [
     ],
   },
   {
+    imgSrc:"/assets/svg/erp_decision.svg",
     title: "Manufacturing ERP",
     description:
       "Specialized ERP system for manufacturing companies to manage production, inventory, and quality control.",
@@ -865,6 +870,7 @@ export const erpIndustry = [
     ],
   },
   {
+    imgSrc:"/assets/svg/erp_desk.svg",
     title: "Project Management ERP",
     description: "ERP module focused on project planning, execution, and monitoring for service-based organizations.",
     features: [
