@@ -886,6 +886,7 @@ export const erpIndustry = [
 
 export const transportationIndustry = [
   {
+    imgSrc:"/assets/svg/transportation_ship.svg",
     title: "Fleet Management System",
     description:
       "Comprehensive solution for managing vehicle fleets, drivers, maintenance, and logistics operations.",
@@ -899,6 +900,7 @@ export const transportationIndustry = [
     ],
   },
   {
+    imgSrc:"/assets/svg/transportation_mail.svg",
     title: "Logistics Management System",
     description: "End-to-end solution for managing the movement of goods, warehousing, and supply chain operations.",
     features: [
@@ -911,6 +913,7 @@ export const transportationIndustry = [
     ],
   },
   {
+    imgSrc:"/assets/svg/transportation_truck.svg",
     title: "Public Transport Management",
     description:
       "System for managing public transportation networks, schedules, ticketing, and passenger information.",

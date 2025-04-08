@@ -49,7 +49,7 @@ const navData: navDataType[]= [
       { id:"43",name: "Fitness", to: "/industries/fitness",icon: Cross,description:"Transforming Lives Through Technology: Innovative Fitness Solutions for a Healthier You." },
       { id:"44",name: "ERP", to: "/industries/erp",icon: ShoppingBag , description: "Integrate, Automate, Elevate: Your All-in-One ERP Solution for Business Efficiency."},
       { id:"44",name: "Education", to: "/industries/education",icon: ShoppingBag , description: "Integrate, Automate, Elevate: Your All-in-One ERP Solution for Business Efficiency."},
-      { id:"44",name: "Transpotation", to: "/industries/transpotation",icon: ShoppingBag , description: "Integrate, Automate, Elevate: Your All-in-One ERP Solution for Business Efficiency."},
+      { id:"44",name: "Transportation", to: "/industries/transportation",icon: ShoppingBag , description: "Integrate, Automate, Elevate: Your All-in-One ERP Solution for Business Efficiency."},
       { id:"44",name: "Banking & Finance", to: "/industries/banking",icon: ShoppingBag , description: "Integrate, Automate, Elevate: Your All-in-One ERP Solution for Business Efficiency."},
       { id:"44",name: "Telicommunication", to: "/industries/telicommunication",icon: ShoppingBag , description: "Integrate, Automate, Elevate: Your All-in-One ERP Solution for Business Efficiency."},
       { id:"45",name: "Others", to: "/industries/others",icon: Building,description: "Your Partner in Progress: Custom Software Services to Meet Every Business Need." },

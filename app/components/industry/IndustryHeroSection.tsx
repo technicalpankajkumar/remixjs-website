@@ -14,13 +14,13 @@ export default function IndustryHeroSection({ id, title,description, description
                     <p className="text-slate-800">"{description}"</p>
                 </div>
                 {
-                    descriptionList?.map((res:any )=> <>
+                    descriptionList?.map((res:any )=> <div key={res.title}>
                         <h4 className="text-base  text-gray-600 mb-1 font-medium flex gap-1 items-center">
                         <ChevronsRight /> {res.title}
                         </h4>
                         <p className="text-slate-600 text-sm mb-2 ps-7">
                             {res.description}
-                        </p></>
+                        </p></div>
                     )}
                 <div className="flex gap-2 pt-2">
                 </div>
