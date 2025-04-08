@@ -967,6 +967,7 @@ export const telicomIndustry = [
 
 export const otherIndustry = [
   {
+    imgSrc:"/assets/svg/collabs.svg",
     title: "Real Estate Management",
     description: "Software for managing property listings, tenant relationships, and real estate operations.",
     features: [
@@ -979,6 +980,7 @@ export const otherIndustry = [
     ],
   },
   {
+    imgSrc:"/assets/svg/hospital.svg",
     title: "Hospitality Management",
     description:
       "Comprehensive solution for hotels and resorts to manage reservations, guest services, and operations.",
@@ -992,6 +994,7 @@ export const otherIndustry = [
     ],
   },
   {
+    imgSrc:"/assets/svg/agreeculture.svg",
     title: "Agriculture Management",
     description: "Software for farm management, crop planning, livestock tracking, and agricultural operations.",
     features: [
