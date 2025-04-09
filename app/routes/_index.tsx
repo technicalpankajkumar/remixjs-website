@@ -7,6 +7,7 @@ import { ServicesSection } from "~/components/OurService";
 import { StrategySection } from "~/components/OurStrategySection";
 import { ClientTestimonialSection } from "~/components/ClientTestimonialSection";
 import { TechnologySection } from "~/components/TechnologySection";
+import PartnerSection from "~/components/PartnerSection";
 export const meta: MetaFunction = () => {
   return [
     { title: "home" },
@@ -19,10 +20,11 @@ export default function Index() {
     <div>
        <HeroSection/>
        <VisionSection/>
-       <ServicesSection/>
        <StrategySection/>
-       <ClientTestimonialSection/>
+       <ServicesSection/>
        <TechnologySection/>
+       <PartnerSection/>
+       <ClientTestimonialSection/>
     </div>
   );
 }

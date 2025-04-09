@@ -2,109 +2,56 @@ import { Card, CardContent } from "~/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "~/components/ui/avatar"
 import { Quote } from "lucide-react"
 import { useState } from "react"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Autoplay } from "swiper/modules"
+import Heading from "./selfComponent/Heading"
+import { testimonials } from "~/constants"
 
 export function ClientTestimonialSection() {
-  const [activeIndex, setActiveIndex] = useState(0)
-
-  const testimonials = [
-    {
-      quote:
-        "YGTW Technology transformed our business operations with their innovative tech solutions. Their team's expertise and dedication made all the difference.",
-      author: "Sarah Johnson",
-      position: "CEO, TechVision Inc.",
-      avatar: "/placeholder.svg?height=50&width=50",
-    },
-    {
-      quote:
-        "Working with YGTW  Technology has been a game-changer for our company. Their strategic approach and cutting-edge solutions helped us stay ahead of the competition.",
-      author: "Michael Chen",
-      position: "CTO, Global Innovations",
-      avatar: "/placeholder.svg?height=50&width=50",
-    },
-    {
-      quote:
-        "The team at YGTW  Technology provided exceptional service and delivered results beyond our expectations. Their insights into our industry were invaluable.",
-      author: "Emily Rodriguez",
-      position: "Operations Director, NextGen Solutions",
-      avatar: "/placeholder.svg?height=50&width=50",
-    },
-  ]
 
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
+    <section className="py-8 md:py-12 ">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">What Our Clients Say</h2>
-          <p className="text-slate-600 max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what our clients have to say about working with YGTW  Technology.
-          </p>
+        <div className="text-center mb-6">
+         <Heading level={4}>What Our Clients Say</Heading>
         </div>
-
-        <div className="max-w-5xl mx-auto">
-          {/* Desktop testimonial */}
-          <div className="hidden md:block">
-            <Card className="border-none shadow-lg">
-              <CardContent className="pt-8 px-8">
-                <div className="flex flex-col items-center text-center">
-                  <Quote className="h-12 w-12 text-slate-800 mb-6" />
-                  <p className="text-xl text-slate-700 italic mb-8">"{testimonials[activeIndex].quote}"</p>
-                  <Avatar className="h-16 w-16 mb-4">
-                    <AvatarImage src={testimonials[activeIndex].avatar} alt={testimonials[activeIndex].author} />
-                    <AvatarFallback>
-                      {testimonials[activeIndex].author
-                        .split(" ")
-                        .map((n) => n[0])
-                        .join("")}
-                    </AvatarFallback>
-                  </Avatar>
-                  <div>
-                    <h4 className="font-bold text-slate-800">{testimonials[activeIndex].author}</h4>
-                    <p className="text-slate-600">{testimonials[activeIndex].position}</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+        <section className="bg-white dark:bg-gray-900">
+          <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+            <Swiper
+              spaceBetween={10}
+              modules={[Autoplay]}
+              autoplay={{
+                delay: 2000, // Delay in milliseconds
+                disableOnInteraction: false, // Continue autoplay after user interactions
+              }}
+              onSlideChange={() => console.log('slide change')}
+              onSwiper={(swiper) => console.log(swiper)}
+              className="flex gap-3"
+            >
+            {
+              testimonials?.map(res => {
+               return <SwiperSlide key={res.id}>
+                <figure className="max-w-screen-md mx-auto">
+                    <svg className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
+                    </svg> 
+                    <blockquote>
+                        <p className="text-2xl font-medium text-gray-900 dark:text-white">{res.quote}</p>
+                    </blockquote>
+                    <figcaption className="flex items-center justify-center mt-6 space-x-3">
+                        <img className="w-6 h-6 rounded-full" src={res.avatar} alt="profile picture"/>
+                        <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                            <div className="pr-3 font-medium text-gray-900 dark:text-white">{res.author}</div>
+                            <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">{res.position}</div>
+                        </div>
+                    </figcaption>
+                </figure>
+          </SwiperSlide>
+              })
+            }
+            </Swiper>
           </div>
-
-          {/* Mobile testimonials */}
-          <div className="md:hidden">
-            <Card className="border-none shadow-lg">
-              <CardContent className="pt-6 px-6">
-                <div className="flex flex-col items-center text-center">
-                  <Quote className="h-8 w-8 text-slate-800 mb-4" />
-                  <p className="text-lg text-slate-700 italic mb-6">"{testimonials[activeIndex].quote}"</p>
-                  <Avatar className="h-12 w-12 mb-3">
-                    <AvatarImage src={testimonials[activeIndex].avatar} alt={testimonials[activeIndex].author} />
-                    <AvatarFallback>
-                      {testimonials[activeIndex].author
-                        .split(" ")
-                        .map((n) => n[0])
-                        .join("")}
-                    </AvatarFallback>
-                  </Avatar>
-                  <div>
-                    <h4 className="font-bold text-slate-800">{testimonials[activeIndex].author}</h4>
-                    <p className="text-sm text-slate-600">{testimonials[activeIndex].position}</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Testimonial navigation */}
-          <div className="flex justify-center mt-8 gap-2">
-            {testimonials.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setActiveIndex(index)}
-                className={`h-3 w-3 rounded-full transition-all ${
-                  activeIndex === index ? "bg-slate-800 w-6" : "bg-gray-300"
-                }`}
-                aria-label={`View testimonial ${index + 1}`}
-              />
-            ))}
-          </div>
-        </div>
+        </section>
       </div>
     </section>
   )
