@@ -10,7 +10,7 @@ import { TechnologySection } from "~/components/TechnologySection";
 export const meta: MetaFunction = () => {
   return [
     { title: "home" },
-    { name: "SGTech Technology", content: "SG Tech Technology Private Limited" },
+    { name: "YGTWTech Technology", content: "YGTW  Technology Private Limited" },
   ];
 };
 

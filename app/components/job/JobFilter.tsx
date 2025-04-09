@@ -100,13 +100,13 @@ export default function JobFilter({ filters, sortBy, onFilterChange, onSortChang
         <label className="block text-sm font-medium text-gray-700 mb-1">{label}</label>
         <button
           type="button"
-          className="w-full bg-white border border-gray-300 rounded-md py-2 px-3 text-left text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+          className="w-full relative bg-white border border-gray-300 rounded-md py-2 px-3 text-left text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
           onClick={() => toggleDropdown(name)}
         >
           <span className="block truncate">
             {options.find((option) => option.value === value)?.label || "Select..."}
           </span>
-          <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+          <span className="absolute top-2 right-0 flex items-center pr-2 pointer-events-none">
             <svg
               className="h-5 w-5 text-gray-400"
               xmlns="http://www.w3.org/2000/svg"

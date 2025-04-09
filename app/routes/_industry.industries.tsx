@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from "@remix-run/react";
 import { Activity, ArrowRightSquare, BookOpen, Dumbbell, ShoppingCart } from "lucide-react";
 import { Button } from "~/components/ui/button";
-import { bankAndFinanceIndustry, educationIndustory, erpIndustry, fitnessIndustry, healthIndustory, otherIndustry, telicomIndustry, transportationIndustry } from "~/constants";
+import { bankAndFinanceIndustry, educationIndustory, erpIndustry, fitnessIndustry, healthIndustory, otherIndustry, telecomIndustry, transportationIndustry } from "~/constants";
 
 
 const Index = () => {
@@ -220,7 +220,7 @@ const Index = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 place-items-center py-10 px-4 bg-slate-100">
             <div className="p-4  w-full flex items-center justify-center shadow">
                     <img
-                        src="/assets/svg/telicom_customer.svg"
+                        src="/assets/svg/telecom_customer.svg"
                         alt="Custom Applications Services"
                         className="w-96 object-cover rounded-lg" // Adjust width and height here
                     />
@@ -228,10 +228,10 @@ const Index = () => {
                 <div>
                     <div className="flex items-center mb-3">
                         <div className="mr-2"><Activity size={20} /></div>
-                        <p className="text-slate-900 text-xl font-bold">Telicommunication Software Solutions</p>
+                        <p className="text-slate-900 text-xl font-bold">Telecommunication Software Solutions</p>
                     </div>
                 {
-                telicomIndustry?.map(res =><>
+                telecomIndustry?.map(res =><>
                 <h4 className="text-lg  text-gray-600 mb-1 font-medium">
                     {res.title}
                     </h4>

@@ -9,21 +9,21 @@ export function ClientTestimonialSection() {
   const testimonials = [
     {
       quote:
-        "SG Tech Technology transformed our business operations with their innovative tech solutions. Their team's expertise and dedication made all the difference.",
+        "YGTW  Technology transformed our business operations with their innovative tech solutions. Their team's expertise and dedication made all the difference.",
       author: "Sarah Johnson",
       position: "CEO, TechVision Inc.",
       avatar: "/placeholder.svg?height=50&width=50",
     },
     {
       quote:
-        "Working with SG Tech Technology has been a game-changer for our company. Their strategic approach and cutting-edge solutions helped us stay ahead of the competition.",
+        "Working with YGTW  Technology has been a game-changer for our company. Their strategic approach and cutting-edge solutions helped us stay ahead of the competition.",
       author: "Michael Chen",
       position: "CTO, Global Innovations",
       avatar: "/placeholder.svg?height=50&width=50",
     },
     {
       quote:
-        "The team at SG Tech Technology provided exceptional service and delivered results beyond our expectations. Their insights into our industry were invaluable.",
+        "The team at YGTW  Technology provided exceptional service and delivered results beyond our expectations. Their insights into our industry were invaluable.",
       author: "Emily Rodriguez",
       position: "Operations Director, NextGen Solutions",
       avatar: "/placeholder.svg?height=50&width=50",
@@ -36,7 +36,7 @@ export function ClientTestimonialSection() {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">What Our Clients Say</h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what our clients have to say about working with SG Tech Technology.
+            Don't just take our word for it. Here's what our clients have to say about working with YGTW  Technology.
           </p>
         </div>
 

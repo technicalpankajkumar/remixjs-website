@@ -19,7 +19,7 @@ export default function Post() {
   const post = {
     title: "Microsoft Teams vs. Google Workspace: A Comprehensive Comparison for Your Business Needs",
     date: "March 10, 2025",
-    author: "SG Tech",
+    author: "YGTW ",
     comments: 0,
     image: "/assets/appdevelopmentsvg.png",
     content: `
@@ -217,9 +217,9 @@ export default function Post() {
               <img src="/placeholder.svg?height=64&width=64" alt="Author" className="object-cover" />
             </div>
             <div>
-              <h3 className="font-bold text-slate-800">SG Tech Technologies</h3>
+              <h3 className="font-bold text-slate-800">YGTW  Technologies</h3>
               <p className="text-sm text-slate-600">
-                SG Tech Technologies is one of the premier offshore IT Business Consulting companies delivering cutting-edge
+                YGTW  Technologies is one of the premier offshore IT Business Consulting companies delivering cutting-edge
                 solutions to clients across the globe.
               </p>
             </div>

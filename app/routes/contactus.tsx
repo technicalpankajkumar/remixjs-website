@@ -44,7 +44,7 @@ export default function ContactUs() {
       <div className="container mx-auto px-4">
         <div className="mb-12">
           <p className="text-slate-600">
-            We'd love to hear about your project! Feel free to reach out to us via email at sgtechtechnology@gmail.com, or
+            We'd love to hear about your project! Feel free to reach out to us via email at pankajkumar@yougotoweb.com, or
             simply fill out the contact form below. Our team will review your message and respond promptly.
           </p>
         </div>
@@ -60,7 +60,7 @@ export default function ContactUs() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="SG Tech Technology Office Location"
+                title="YGTW  Technology Office Location"
               ></iframe>
             </div>
 
@@ -70,15 +70,15 @@ export default function ContactUs() {
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <div className="text-slate-800 mr-3">📍</div>
-                    <p className="text-slate-600">Kerakat Jaunpur Uttar Pradesh</p>
+                    <p className="text-slate-600">Online Uttar Pradesh</p>
                   </div>
                   <div className="flex items-start">
                     <div className="text-slate-800 mr-3">📞</div>
-                    <p className="text-slate-600">+91-6393539704, +91-6393539704</p>
+                    <p className="text-slate-600">+91-0000000000, +91-0000000000</p>
                   </div>
                   <div className="flex items-start">
                     <div className="text-slate-800 mr-3">✉️</div>
-                    <p className="text-slate-600">sgtechtechnology@gmail.com</p>
+                    <p className="text-slate-600">pankajkumar@yougotoweb.com</p>
                   </div>
                 </div>
               </div>
@@ -94,11 +94,11 @@ export default function ContactUs() {
                   </div>
                   <div className="flex items-start">
                     <div className="text-slate-800 mr-3">📞</div>
-                    <p className="text-slate-600">+91 6393539704</p>
+                    <p className="text-slate-600">+91 0000000000</p>
                   </div>
                   <div className="flex items-start">
                     <div className="text-slate-800 mr-3">✉️</div>
-                    <p className="text-slate-600">sgtechtechnology@gmail.com</p>
+                    <p className="text-slate-600">pankajkumar@yougotoweb.com</p>
                   </div>
                 </div>
               </div>

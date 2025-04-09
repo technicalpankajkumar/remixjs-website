@@ -13,7 +13,7 @@ const blogPosts = [
     excerpt:
       "In a groundbreaking announcement on March 19, 2025, NVIDIA has once again pushed the boundaries of artificial intelligence and computing...",
     date: "March 19, 2025",
-    author: "SG Tech",
+    author: "YGTW ",
     comments: 0,
     image: "/assets/itimg.png",
     category: "Technology",
@@ -25,7 +25,7 @@ const blogPosts = [
     excerpt:
       "Microsoft Teams vs. Google Workspace In today's digital-first world, effective collaboration tools are essential for businesses to thrive. Two of...",
     date: "March 10, 2025",
-    author: "SG Tech",
+    author: "YGTW ",
     comments: 0,
     image: "/assets/retail.png",
     category: "Business",
@@ -37,7 +37,7 @@ const blogPosts = [
     excerpt:
       "What Is Cloud Native (and Why Does It Matter)? In the digital transformation era, businesses increasingly turn to cloud-native technologies to...",
     date: "March 6, 2025",
-    author: "SG Tech",
+    author: "YGTW ",
     comments: 0,
     image: "/assets/supportsimg.jpg",
     category: "Technology",
@@ -49,7 +49,7 @@ const blogPosts = [
     excerpt:
       "Microsoft has announced that it will permanently shut down Skype, marking the end of an iconic communication tool that played...",
     date: "March 4, 2025",
-    author: "SG Tech",
+    author: "YGTW ",
     comments: 0,
     image: "/assets/transpotation.png",
     category: "Technology",
@@ -61,7 +61,7 @@ const blogPosts = [
     excerpt:
       "Static vs. Dynamic Content In the digital landscape, developers often face the dilemma of choosing between static and dynamic content...",
     date: "February 19, 2025",
-    author: "SG Tech",
+    author: "YGTW ",
     comments: 0,
     image: "/assets/appdevelopment.jpg",
     category: "Web Development",
@@ -73,7 +73,7 @@ const blogPosts = [
     excerpt:
       "Blockchain: Beyond Cryptocurrencies Blockchain technology is often synonymous with cryptocurrencies like Bitcoin and Ethereum. However, its potential extends far beyond...",
     date: "February 5, 2025",
-    author: "SG Tech",
+    author: "YGTW ",
     comments: 0,
     image: "/assets/hms.png",
     category: "Healthcare",

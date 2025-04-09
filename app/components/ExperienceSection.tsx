@@ -4,7 +4,7 @@ import { Card, CardContent } from "~/components/ui/card"
 export function ExperienceSection() {
   return (
     <section className="relative bg-slate-800 py-6 md:py-8 overflow-hidden">
-      {/* Tech background pattern */}
+      {/*  background pattern */}
       <div className="absolute inset-0 z-0 opacity-30 bg-[url('https://pic.pikbest.com/02/10/87/58G888piCXPh.jpg!bw700')] bg-cover bg-center"></div>
 
       <div className="container relative z-10 mx-auto px-4">

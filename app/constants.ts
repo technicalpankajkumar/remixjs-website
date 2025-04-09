@@ -758,6 +758,7 @@ export const fitnessIndustry = [
 
 export const bankAndFinanceIndustry = [
   {
+    imgSrc:"/assets/svg/banking_branch_manager.svg",
     title: "Core Banking System",
     description:
       "Centralized banking platform that manages accounts, transactions, and essential banking operations.",
@@ -771,6 +772,7 @@ export const bankAndFinanceIndustry = [
     ],
   },
   {
+    imgSrc:"/assets/svg/banking_manager.svg",
     title: "Digital Banking Platform",
     description:
       "Omnichannel platform providing customers with seamless banking experiences across web and mobile devices.",
@@ -784,6 +786,7 @@ export const bankAndFinanceIndustry = [
     ],
   },
   {
+    imgSrc:"/assets/svg/banking_security.svg",
     title: "Fraud Detection System",
     description:
       "AI-powered system that monitors transactions in real-time to detect and prevent fraudulent activities.",
@@ -928,8 +931,9 @@ export const transportationIndustry = [
   },
 ]
 
-export const telicomIndustry = [
+export const telecomIndustry = [
   {
+    imgSrc:"/assets/svg/telecom_management.svg",
     title: "Billing and Revenue Management",
     description: "System for managing telecom service billing, revenue collection, and subscription management.",
     features: [
@@ -942,6 +946,7 @@ export const telicomIndustry = [
     ],
   },
   {
+    imgSrc:"/assets/svg/telecom_video.svg",
     title: "Network Management System",
     description: "Platform for monitoring, managing, and optimizing telecommunications network infrastructure.",
     features: [
@@ -954,6 +959,7 @@ export const telicomIndustry = [
     ],
   },
   {
+    imgSrc:"/assets/svg/telecom_call.svg",
     title: "Customer Service Platform",
     description:
       "Omnichannel customer service solution for telecom providers to manage customer interactions and support.",

@@ -18,7 +18,7 @@ export function StrategySection() {
               </h2>
 
               <p className="text-slate-600 text-lg mb-8">
-              SG Tech Technology is dedicated to unlocking your business's potential through tailored solutions. Whether
+              YGTW  Technology is dedicated to unlocking your business's potential through tailored solutions. Whether
                 you're launching a new venture or seeking to optimize your current operations, our experts are here to
                 support you every step of the way.
               </p>

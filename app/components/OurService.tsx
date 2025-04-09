@@ -16,21 +16,21 @@ export function ServicesSection() {
     },
     {
       icon: <FileText className="h-16 w-16 text-slate-700" />,
-      title: "Reg-Tech Consulting",
+      title: "Reg- Consulting",
       description:
-        "At SG Tech Technology, we specialize in RegTech solutions that simplify and streamline compliance processes",
+        "At YGTW  Technology, we specialize in RegTech solutions that simplify and streamline compliance processes",
     },
     {
       icon: <BookOpen className="h-16 w-16 text-slate-700" />,
-      title: "Ed-Tech Consulting",
+      title: "Ed- Consulting",
       description:
-        "At SG Tech Technology, we're at the forefront of this transformation, offering innovative Ed-Tech solutions",
+        "At YGTW  Technology, we're at the forefront of this transformation, offering innovative Ed- solutions",
     },
     {
       icon: <DollarSign className="h-16 w-16 text-slate-700" />,
-      title: "Fin-Tech Consulting",
+      title: "Fin- Consulting",
       description:
-        "At SG Tech Technology, we are driving the future of finance with our cutting-edge Fin-Tech solutions(Financial Services)",
+        "At YGTW  Technology, we are driving the future of finance with our cutting-edge Fin- solutions(Financial Services)",
     },
   ]
 
@@ -44,7 +44,7 @@ export function ServicesSection() {
 
   return (
     <section className="relative bg-slate-900 overflow-hidden py-16 md:py-24">
-      {/* Tech background pattern */}
+      {/*  background pattern */}
       <div className="absolute inset-0 z-0 opacity-50 bg-[url('https://pic.pikbest.com/02/07/05/12A888piCPVj.jpg!bw700')] bg-cover bg-center"></div>
 
       <div className="container relative z-10 mx-auto px-4">

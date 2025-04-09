@@ -50,7 +50,7 @@ export default function BlogComments() {
       replies: [
         {
           id: 101,
-          author: "SG Tech",
+          author: "YGTW ",
           date: "March 15, 2025",
           content:
             "Thanks for your feedback, Sarah! You're right about the integration vs. intuitive interface trade-off. Many organizations find themselves making that exact decision based on their specific needs.",

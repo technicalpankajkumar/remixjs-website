@@ -1,9 +1,10 @@
 import { CategoryHeader } from "~/components/support/CategoryHeader"
-import NotFound from "./$"
+
 import CategoryArticles from "~/components/support/CategoryArtical"
 import SupportContact from "~/components/support/SupportContact"
 import { Outlet, useLocation } from "@remix-run/react"
 import ArticleContent from "~/components/support/ArticalContent"
+import NotFound from "./$"
 
 interface CategoryPageProps {
   params: {

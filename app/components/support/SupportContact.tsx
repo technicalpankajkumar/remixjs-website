@@ -9,7 +9,7 @@ export default function SupportContact() {
       description: "Get help via email. We typically respond within 24 hours.",
       icon: <Mail className="h-8 w-8 text-indigo-500" />,
       action: "Email Us",
-      href: "mailto:support@unicodesystems.com",
+      href: "pankajkumar@yougotoweb.com",
       color: "bg-indigo-100",
     },
     {
@@ -22,10 +22,10 @@ export default function SupportContact() {
     },
     {
       title: "Twitter Support",
-      description: "Tweet us @UnicodeSupport for quick assistance with simple issues.",
+      description: "Tweet us @yougotoweb for quick assistance with simple issues.",
       icon: <Twitter className="h-8 w-8 text-blue-500" />,
       action: "Tweet Us",
-      href: "https://twitter.com/UnicodeSupport",
+      href: "#",
       color: "bg-blue-100",
     },
     {

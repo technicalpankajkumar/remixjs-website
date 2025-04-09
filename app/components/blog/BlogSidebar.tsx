@@ -99,7 +99,7 @@ export function BlogSidebar() {
             <div className="absolute inset-0 bg-slate-200/10 flex flex-col justify-end p-6">
               <h3 className="text-xl font-bold text-white mb-2">Contact Us</h3>
               <p className="text-sm mb-4 text-white">
-                We'd love to hear about your project! Feel free to reach out to us via email at sgtechtechnology@gmail.com,
+                We'd love to hear about your project! Feel free to reach out to us via email at pankajkumar@yougotoweb.com,
                 or simply fill out the contact form below.
               </p>
               <Button asChild className="bg-slate-800 hover:bg-slate-700 text-white">

@@ -19,11 +19,11 @@ export function AboutSection() {
                 </div>
 
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-slate-800 mb-6">
-                  About SG Tech Technology
+                  About YGTW  Technology
                 </h2>
 
                 <p className="text-slate-600 text-lg mb-8">
-                  SG Tech Technology, established in 2006, is a forward-thinking, technology-driven software development
+                  YGTW  Technology, established in 2006, is a forward-thinking, technology-driven software development
                   company, serving businesses worldwide. We are one of the fastest-growing tech companies in our region,
                   providing comprehensive, end-to-end solutions powered by advanced, cutting-edge technologies, enabling
                   our clients to make complex business decisions with confidence and ease. Our strength lies in our
@@ -50,7 +50,7 @@ export function AboutSection() {
                 <CardContent className="p-6">
                   <blockquote className="text-slate-600 italic mb-4">
                     "It is rare to find Commerce Cloud development agencies that just understand your requirements from
-                    the word go and SG Tech Technology is one of them."
+                    the word go and YGTW  Technology is one of them."
                   </blockquote>
 
                   <div className="flex items-center">

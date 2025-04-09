@@ -1,9 +1,10 @@
 import ArticleHeader from "~/components/support/ArticalHeader"
-import NotFound from "./$"
+
 import ArticleContent from "~/components/support/ArticalContent"
 import ArticleRelated from "~/components/support/ArticalRelated"
 import SupportContact from "~/components/support/SupportContact"
 import { useLocation } from "@remix-run/react"
+import NotFound from "./$"
 
 interface ArticlePageProps {
   params: {
@@ -77,7 +78,7 @@ export default function ArticlePage() {
       .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
       .join(" "),
     date: "March 25, 2025",
-    author: "Unicode Support Team",
+    author: "YGTW Support Team",
     content: `
       <p>This is a sample article content. In a real application, this would be fetched from a database or CMS based on the article slug.</p>
       

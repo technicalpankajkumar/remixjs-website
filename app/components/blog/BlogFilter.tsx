@@ -7,12 +7,20 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "~
 import { Badge } from "~/components/ui/badge"
 import { X, Filter, ChevronDown, ChevronUp } from "lucide-react"
 import { cn } from "~/lib/utils"
+import { format } from "date-fns"
+import { Calendar as CalendarIcon } from "lucide-react"
+import { Calendar } from "~/components/ui/calendar"
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "~/components/ui/popover"
 
 export function BlogFilter() {
   const [isOpen, setIsOpen] = useState(false)
   const [searchTerm, setSearchTerm] = useState("")
   const [category, setCategory] = useState("")
-  const [date, setDate] = useState("")
+  const [date, setDate] = useState<Date>()
   const [appliedFilters, setAppliedFilters] = useState<{ type: string; value: string }[]>([])
   const [isMobile, setIsMobile] = useState(false)
 
@@ -70,7 +78,7 @@ export function BlogFilter() {
 
     // Add date if selected
     if (date) {
-      newFilters.push({ type: "date", value: date })
+      newFilters.push({ type: "date", value: String(date) })
     }
 
     setAppliedFilters(newFilters)
@@ -92,13 +100,13 @@ export function BlogFilter() {
     // Also reset the corresponding input
     if (filterToRemove.type === "search") setSearchTerm("")
     if (filterToRemove.type === "category") setCategory("")
-    if (filterToRemove.type === "date") setDate("")
+    if (filterToRemove.type === "date") setDate(undefined)
   }
 
   const clearAllFilters = () => {
     setSearchTerm("")
     setCategory("")
-    setDate("")
+    setDate(undefined)
     setAppliedFilters([])
   }
 
@@ -191,8 +199,29 @@ export function BlogFilter() {
                 </Select>
               </div>
 
-              <div>
-                <Input type="date" value={date} onChange={(e) => setDate(e.target.value)} className="w-full" />
+              <div> 
+                <Popover>
+                  <PopoverTrigger asChild>
+                    <Button
+                      variant={"outline"}
+                      className={cn(
+                        "w-full justify-start text-left font-normal",
+                        !date && "text-muted-foreground"
+                      )}
+                    >
+                      <CalendarIcon className="mr-2 h-4" />
+                      {date ? format(date, "PPP") : <span>Pick a date</span>}
+                    </Button>
+                  </PopoverTrigger>
+                  {/* <PopoverContent className="w-auto p-0 relative"> */}
+                    <Calendar
+                      mode="single"
+                      selected={date}
+                      onSelect={setDate}
+                      initialFocus
+                    />
+                  {/* </PopoverContent> */}
+                </Popover>
               </div>
 
               <div className="flex gap-2">

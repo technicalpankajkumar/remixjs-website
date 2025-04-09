@@ -15,7 +15,7 @@ export function FurtureVisionSection() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-6">What We Do?</h2>
 
           <p className="text-slate-600 max-w-4xl text-lg">
-            At SG Tech, we offer a broad spectrum of services, from custom website design to the development of
+            At YGTW , we offer a broad spectrum of services, from custom website design to the development of
             sophisticated internet solutions. We base our approach on a profound comprehension of our clients' business
             requirements, guaranteeing the provision of dependable and high-quality solutions. By blending business
             domain expertise with technological proficiency and proven methodologies, we consistently deliver
@@ -38,7 +38,7 @@ export function FurtureVisionSection() {
             <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Our Commitment</h3>
 
             <p className="text-slate-600 text-lg mb-8">
-              At SG Tech Technology, we are committed to delivering maximum value to our clients. Our belief in the
+              At YGTW  Technology, we are committed to delivering maximum value to our clients. Our belief in the
               intricate link between our success and our clients' success drives our actions. In a constantly changing
               and challenging market, we strive to be your trusted partner, helping you navigate the complexities and
               achieve sustainable growth.
@@ -91,7 +91,7 @@ export function FurtureVisionSection() {
               <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Looking to the Future</h3>
 
               <p className="text-slate-600 text-lg mb-4">
-                As technology continues to evolve at a rapid pace, SG Tech Technology remains at the forefront of
+                As technology continues to evolve at a rapid pace, YGTW  Technology remains at the forefront of
                 innovation. We are constantly investing in research and development to anticipate future trends and
                 prepare our clients for the challenges and opportunities that lie ahead.
               </p>

@@ -28,14 +28,14 @@ export function Footer() {
 
             <div className="mb-4">
               <span className="text-2xl font-bold">
-                <span className="text-blue-400">SG</span>
-                <span className="text-slate-300 ps-1">TECH</span>
+                <span className="text-blue-400">YGTW</span>
+                <span className="text-slate-300 ps-1"></span>
               </span>
               <span className="block text-xs tracking-widest text-gray-400">Technology</span>
             </div>
 
             <p className="text-sm text-gray-300 leading-relaxed">
-              SG Tech Technology is one of the premier offshore IT Business Consulting companies delivering cutting-edge
+              YGTW  Technology is one of the premier offshore IT Business Consulting companies delivering cutting-edge
               solutions to clients across the globe.
             </p>
           </div>
@@ -109,9 +109,9 @@ export function Footer() {
 
         {/* Bottom copyright and social media section */}
         <div className="pt-6 border-t border-slate-700 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-sm text-gray-400">© 2025, SG Tech Technology All rights reserved.</div>
+          <div className="text-sm text-gray-400">© 2025, YGTW  Technology All rights reserved.</div>
 
-          <div className="text-sm text-gray-400">sgtechtechnology@gmail.com | Kerakat Jaunpur Uttar Pradesh</div>
+          <div className="text-sm text-gray-400">pankajkumar@yougotoweb.com | Online Uttar Pradesh</div>
 
           <div className="flex space-x-2">
             <a href="#" className="bg-white p-2 rounded-md hover:bg-gray-200 transition-colors">

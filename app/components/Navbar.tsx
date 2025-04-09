@@ -51,7 +51,7 @@ const navData: navDataType[]= [
       { id:"44",name: "Education", to: "/industries/education",icon: ShoppingBag , description: "Integrate, Automate, Elevate: Your All-in-One ERP Solution for Business Efficiency."},
       { id:"44",name: "Transportation", to: "/industries/transportation",icon: ShoppingBag , description: "Integrate, Automate, Elevate: Your All-in-One ERP Solution for Business Efficiency."},
       { id:"44",name: "Banking & Finance", to: "/industries/banking",icon: ShoppingBag , description: "Integrate, Automate, Elevate: Your All-in-One ERP Solution for Business Efficiency."},
-      { id:"44",name: "Telicommunication", to: "/industries/telicommunication",icon: ShoppingBag , description: "Integrate, Automate, Elevate: Your All-in-One ERP Solution for Business Efficiency."},
+      { id:"44",name: "Telecommunication", to: "/industries/telecommunication",icon: ShoppingBag , description: "Enabling communication service providers with software for network management, billing, and customer service."},
       { id:"45",name: "Others", to: "/industries/others",icon: Building,description: "Your Partner in Progress: Custom Software Services to Meet Every Business Need." },
     ],
   },
@@ -177,8 +177,8 @@ export function Navbar() {
                   <div className="flex items-center justify-between p-4 border-b">
                     <Link to="/" className="flex items-center">
                     <span className="text-2xl font-bold">
-                      <span className="text-blue-400">SG</span>
-                      <span className="text-slate-800 ms-1">TECH</span>
+                      <span className="text-blue-400">YGTW</span>
+                      <span className="text-slate-800 ms-1"></span>
                       <span className="ms-1 text-gray-400">Technology</span>
                     </span>
                     </Link>

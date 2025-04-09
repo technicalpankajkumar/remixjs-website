@@ -13,11 +13,11 @@ export function VisionSection() {
           </div>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
-            Why Choose SG Tech Technology?
+            Why Choose YGTW  Technology?
           </h2>
 
           <p className="text-slate-600 max-w-4xl text-lg">
-            At SG Tech Technology, we specialize in bridging the gap between technology and business. Our mission is to
+            At YGTW  Technology, we specialize in bridging the gap between technology and business. Our mission is to
             provide tailored solutions that enhance your operations and fuel your growth. Join us to transform your
             business with our expert guidance and innovative strategies.
           </p>
