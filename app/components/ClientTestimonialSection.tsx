@@ -9,7 +9,7 @@ export function ClientTestimonialSection() {
   const testimonials = [
     {
       quote:
-        "YGTW  Technology transformed our business operations with their innovative tech solutions. Their team's expertise and dedication made all the difference.",
+        "YGTW Technology transformed our business operations with their innovative tech solutions. Their team's expertise and dedication made all the difference.",
       author: "Sarah Johnson",
       position: "CEO, TechVision Inc.",
       avatar: "/placeholder.svg?height=50&width=50",
@@ -40,7 +40,7 @@ export function ClientTestimonialSection() {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           {/* Desktop testimonial */}
           <div className="hidden md:block">
             <Card className="border-none shadow-lg">

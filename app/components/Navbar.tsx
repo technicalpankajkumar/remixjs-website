@@ -301,10 +301,10 @@ const ListItem = React.forwardRef<
           )}
           {...props}
         >
-          <div className="text-sm font-medium leading-none">{title}</div>
-          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+          <span className="text-sm font-medium leading-none">{title}</span>
+          <span className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}
-          </p>
+          </span>
         </a>
       </NavigationMenuLink>
     </li>

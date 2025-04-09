@@ -8,6 +8,7 @@ import {
 import type { LinksFunction } from "@remix-run/node";
 import styles from "./tailwind.css?url";
 import "./tailwind.css";
+import 'swiper/css';
 import MainLayout from "./layouts/MainLayout";
 
 export const links: LinksFunction = () => [
@@ -22,6 +23,7 @@ export const links: LinksFunction = () => [
     href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
   },
   { rel: "stylesheet", href: styles },
+  { rel: "stylesheet", href: "https://unpkg.com/swiper/swiper-bundle.min.css" },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
