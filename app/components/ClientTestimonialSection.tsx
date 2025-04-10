@@ -1,11 +1,8 @@
-import { Card, CardContent } from "~/components/ui/card"
-import { Avatar, AvatarFallback, AvatarImage } from "~/components/ui/avatar"
-import { Quote } from "lucide-react"
-import { useState } from "react"
-import { Swiper, SwiperSlide } from "swiper/react"
-import { Autoplay } from "swiper/modules"
+
+import { SwiperSlide } from "swiper/react"
 import Heading from "./selfComponent/Heading"
 import { testimonials } from "~/constants"
+import SwiperSlides from "./selfComponent/SwiperSlides"
 
 export function ClientTestimonialSection() {
 
@@ -17,17 +14,7 @@ export function ClientTestimonialSection() {
         </div>
         <section className="bg-white dark:bg-gray-900">
           <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-            <Swiper
-              spaceBetween={10}
-              modules={[Autoplay]}
-              autoplay={{
-                delay: 2000, // Delay in milliseconds
-                disableOnInteraction: false, // Continue autoplay after user interactions
-              }}
-              onSlideChange={() => console.log('slide change')}
-              onSwiper={(swiper) => console.log(swiper)}
-              className="flex gap-3"
-            >
+            <SwiperSlides slidesPerView={1}>
             {
               testimonials?.map(res => {
                return <SwiperSlide key={res.id}>
@@ -49,7 +36,7 @@ export function ClientTestimonialSection() {
           </SwiperSlide>
               })
             }
-            </Swiper>
+            </SwiperSlides>
           </div>
         </section>
       </div>

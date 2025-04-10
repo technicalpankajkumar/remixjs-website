@@ -1042,4 +1042,27 @@ export const testimonials = [
     avatar: "/assets/svg/telecom_customer3.svg",
     id:"3"
   },
-]
+];
+
+export const homeData = {
+  id:1,
+  tag:"Vision For The Future",
+  title:"Why Choose YGTW  Technology?.",
+  description:"At YGTW  Technology, we specialize in bridging the gap between technology and business. Our mission is to provide tailored solutions that enhance your operations and fuel your growth. Join us to transform your  business with our expert guidance and innovative strategies.",
+  images:[{imgSrc:"/assets/svg/ecom_board.svg",alt:"Board Image"},{imgSrc:"/assets/svg/development_admin.svg",alt:"Admin Image"}],
+  cards: [{
+    id: '1',
+    title: "Dedicated Support",
+    description: "At every stage of your journey, our team provides personalized support and expertise to ensure your success."
+  },
+  {
+    id: '2',
+    title: "Market Research",
+    description: "Our in-depth market research and insights equip you with the knowledge to seize opportunities and make informed decisions."
+  },
+  {
+    id: '3',
+    title: "Expert Advisor",
+    description: "Gain access to industry leaders who offer customized solutions in IT, marketing, finance, and more to keep you ahead of the curve."
+  }]
+}

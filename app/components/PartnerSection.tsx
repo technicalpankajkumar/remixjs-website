@@ -1,9 +1,7 @@
 
-import { Autoplay } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { SwiperSlide } from "swiper/react";
 import Heading from "./selfComponent/Heading";
-
-
+import SwiperSlides from "./selfComponent/SwiperSlides";
 
 
 const PartnerSection=()=>{
@@ -11,14 +9,7 @@ const PartnerSection=()=>{
     return (<div className="container mx-auto px-4 bg-gray-50">
     <div className="py-4 lg:pb-10 mb-10">
         <Heading level={4} className="text-center mb-10 mt-4">You’ll be in good company</Heading>
-        <Swiper
-          spaceBetween={10}
-          modules={[Autoplay]}
-          autoplay={{
-            delay: 1000, // Delay in milliseconds
-            disableOnInteraction: false, // Continue autoplay after user interactions
-          }}
-          breakpoints={{
+          <SwiperSlides breakpoints={{
             480: {
               slidesPerView: 2, // Show 1 slide on small devices
             },
@@ -34,12 +25,7 @@ const PartnerSection=()=>{
             1280: {
               slidesPerView: 7,
             },
-          }}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
-          className="flex gap-3"
-
-        >
+          }}>
           <SwiperSlide>
             <a href="#" className="flex justify-center items-center">
               <img src={`https://www.softros.com/img/softros-logo.png`} className="h-6 md:h-8 object-cover hover:text-gray-900 dark:hover:text-white" />
@@ -112,7 +98,7 @@ const PartnerSection=()=>{
               </svg>
             </a>
           </SwiperSlide>
-        </Swiper>
+        </SwiperSlides>
       </div>
     </div>)
 }

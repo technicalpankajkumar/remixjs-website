@@ -1,79 +1,68 @@
 import { Card, CardContent } from "~/components/ui/card"
-import { Button } from "./ui/button"
+import Heading from "./selfComponent/Heading"
+import { Separator } from "@radix-ui/react-separator"
+import { SwiperSlide } from "swiper/react"
+import SwiperSlides from "./selfComponent/SwiperSlides"
+import { homeData } from "~/constants"
 
 export function VisionSection() {
-  return (
-    <section className="py-16 md:py-24 bg-white">
-      <div className="container mx-auto px-4">
-        {/* Section header */}
-        <div className="mb-12">
-          <div className="flex items-center mb-4">
-            <div className="h-1 w-12 bg-slate-800 mr-4"></div>
-            <p className="text-slate-700 text-lg">Vision For The Future</p>
-          </div>
+  return (<section className="py-6 md:py-12 bg-white">
+    <div className="container mx-auto px-4 md:px-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 place-content-between">
+        <div>
+          {/* Section header */}
+          <div className="mb-8">
+            <div className="flex items-baseline gap-2">
+              <div>
+                <Separator className="my-0 rounded-full mt-2 bg-slate-700 h-1 w-10" />
+                <Separator className="mt-1 rounded-full bg-blue-700 h-1 w-10" />
+              </div>
+              <Heading level={7} className="">{homeData?.tag}</Heading>
+            </div>
+            <Heading level={3} className="">{homeData.title}</Heading>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-6">
-            Why Choose YGTW  Technology?
-          </h2>
+            <p className="text-slate-600 text-lg mb-8">
+              {homeData.description}
+            </p>
+            <div className="px-2 py-3 bg-gray-50">
+              <SwiperSlides>
+                {
+                  homeData.cards?.map(res => (<SwiperSlide key={res.id} className="">
+                    <Card className="h-48 relative bg-white overflow-hidden">
+                      <div className="h-24 w-24 rounded-full bg-blue-700 absolute opacity-50 -left-10 -top-6 z-0"></div>
+                      <div className="h-10 w-10 rounded-full bg-blue-700 absolute opacity-30 right-1 bottom-6 z-0"></div>
+                      <CardContent className="pt-2">
+                        <Heading level={6}>{res.title}</Heading>
 
-          <p className="text-slate-600 max-w-4xl text-lg">
-            At YGTW  Technology, we specialize in bridging the gap between technology and business. Our mission is to
-            provide tailored solutions that enhance your operations and fuel your growth. Join us to transform your
-            business with our expert guidance and innovative strategies.
-          </p>
-        </div>
-
-        {/* Features grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-12 place-items-center">
-          <div className="lg:col-span-1">
-            <img
-              src="https://img.freepik.com/free-photo/people-taking-part-business-event_23-2149346666.jpg?t=st=1742651077~exp=1742654677~hmac=05298b57b011df6c2c114ba9726dcfc437958b7edd00122682ea2e22b3446dac&w=996"
-              alt="Business professionals collaborating"
-              className="rounded-lg shadow-lg"
-            />
-          </div>
-
-          <div className="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="border-t-4 border-t-slate-800">
-              <CardContent className="pt-6">
-                <h3 className="text-xl font-bold mb-3 text-slate-800">Dedicated Support</h3>
-                <p className="text-slate-600">
-                  At every stage of your journey, our team provides personalized support and expertise to ensure your
-                  success.
-                </p>
-                <div className="mt-6 h-1 w-full bg-slate-800"></div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-t-4 border-t-slate-800">
-              <CardContent className="pt-6">
-                <h3 className="text-xl font-bold mb-3 text-slate-800">Expert Advisors</h3>
-                <p className="text-slate-600">
-                  Gain access to industry leaders who offer customized solutions in IT, marketing, finance, and more to
-                  keep you ahead of the curve.
-                </p>
-                <div className="mt-6 h-1 w-full bg-slate-800"></div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-t-4 border-t-slate-800">
-              <CardContent className="pt-6">
-                <h3 className="text-xl font-bold mb-3 text-slate-800">Market Research</h3>
-                <p className="text-slate-600">
-                  Our in-depth market research and insights equip you with the knowledge to seize opportunities and make
-                  informed decisions.
-                </p>
-                <div className="mt-6 h-1 w-full bg-slate-800"></div>
-              </CardContent>
-            </Card>
+                        <p className="text-slate-600 h-40 overflow-y-auto text-sm">
+                          {res.description}
+                        </p>
+                        <div className="mt-6 h-2 w-full bg-blue-600 absolute bottom-3 left-0 right-0"></div>
+                        <div className="mt-6 h-2 w-full bg-slate-300 absolute bottom-1 left-0 right-0"></div>
+                      </CardContent>
+                    </Card>
+                  </SwiperSlide>)
+                )}
+              </SwiperSlides>
+            </div>
           </div>
         </div>
 
-        <div className="flex justify-end">
-          <Button className="bg-slate-800 hover:bg-slate-700 text-white font-medium px-8 py-2 h-auto">ABOUT US</Button>
+        <div className="bg-gray-50 hidden lg:block">
+          <SwiperSlides>
+           { homeData.images?.map(res =>( <SwiperSlide key={res.alt}>
+              <img
+                src={res.imgSrc}
+                alt={res.alt}
+                className="object-cover w-full"
+              />
+            </SwiperSlide>))}
+            </SwiperSlides>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+
   )
 }
 

@@ -166,7 +166,7 @@ export function Navbar() {
                 <Button
                   variant="destructive"
                   size="icon"
-                  className={isScrolled ? "text-slate-800" : "text-white"}
+                  className={isScrolled ? "text-slate-100" : "text-white"}
                   aria-label="Menu"
                 >
                   <Menu className="h-6 w-6" />
