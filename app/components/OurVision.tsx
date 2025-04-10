@@ -49,12 +49,12 @@ export function VisionSection() {
         </div>
 
         <div className="bg-gray-50 hidden lg:block">
-          <SwiperSlides>
+          <SwiperSlides slidesPerView={1} breakpoints={{}}>
            { homeData.images?.map(res =>( <SwiperSlide key={res.alt}>
               <img
                 src={res.imgSrc}
                 alt={res.alt}
-                className="object-cover w-full"
+                className="object-cover"
               />
             </SwiperSlide>))}
             </SwiperSlides>

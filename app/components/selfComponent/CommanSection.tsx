@@ -6,11 +6,12 @@ interface CommanSectionProps {
     tag: string,
     heading: string,
     description: string,
-    children: ReactNode,
-    imgSrc: string
+    children?: ReactNode,
+    imgSrc?: string,
+    newNode?:ReactNode
 }
 
-const CommanSection: FC<CommanSectionProps> = ({ tag, heading, description, children, imgSrc }) => {
+const CommanSection: FC<CommanSectionProps> = ({ tag, heading, description, children, imgSrc,newNode }) => {
 
     return (<section className="py-10 md:py-16 bg-white">
         <div className="container mx-auto px-4 md:px-8">
@@ -27,7 +28,7 @@ const CommanSection: FC<CommanSectionProps> = ({ tag, heading, description, chil
                         </div>
                         <Heading level={3} className="">{heading}</Heading>
 
-                        <p className="text-slate-600 text-lg mb-8">
+                        <p className="text-slate-600 text-base mb-8">
                             {description}
                         </p>
 
@@ -37,13 +38,16 @@ const CommanSection: FC<CommanSectionProps> = ({ tag, heading, description, chil
                     </div>
                 </div>
 
-                <div className="flex justify-end">
+               {
+                 newNode ? <div className="bg-gray-50 hidden lg:block relative p-4">{newNode}</div>  :
+                <div className="flex justify-end relative">
                     <img
                         src={imgSrc}
                         alt={heading}
                         className="object-cover md:max-w-[500px]"
                     />
                 </div>
+                }
             </div>
         </div>
     </section>)

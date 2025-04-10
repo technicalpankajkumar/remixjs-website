@@ -1,8 +1,5 @@
 import { Link } from "@remix-run/react"
 import { Button } from "~/components/ui/button"
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
-import Heading from "./selfComponent/Heading";
 import CommanSection from "./selfComponent/CommanSection";
 
 export function TechnologySection() {
