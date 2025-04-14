@@ -1066,3 +1066,32 @@ export const homeData = {
     description: "Gain access to industry leaders who offer customized solutions in IT, marketing, finance, and more to keep you ahead of the curve."
   }]
 }
+
+export const coreValueData = [
+  {
+    title: "Innovation",
+    description:
+      "We constantly explore new technologies and methodologies to deliver cutting-edge solutions.",
+  },
+  {
+    title: "Excellence",
+    description:
+      "We strive for excellence in everything we do, ensuring the highest quality in our deliverables.",
+  },
+  {
+    title: "Integrity",
+    description: "We conduct our business with honesty, transparency, and ethical standards.",
+  },
+  {
+    title: "Client-Centric",
+    description:
+      "Our clients' success is our priority, and we tailor our solutions to meet their specific needs.",
+  },
+]
+
+export const projectCounts = [
+  { number: "100+", label: "Clients" },
+  { number: "50+", label: "Team Members" },
+  { number: "24/7", label: "Support" },
+  { number: "98%", label: "Client Satisfaction" },
+]

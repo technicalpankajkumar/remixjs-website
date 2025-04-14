@@ -8,7 +8,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "~/components/ui/navigation-menu"
-import { Link } from "@remix-run/react"
+import { Link, useLocation } from "@remix-run/react"
 import { cn } from "~/lib/utils"
 import { Button } from "./ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "~/components/ui/sheet"
@@ -16,55 +16,16 @@ import { Menu, X, ChevronDown, Home, Info, Settings, Briefcase, Cpu, Phone ,Data
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "~/components/ui/collapsible";
 import image from '/assets/customerimg2.png'
 import image2 from '/assets/customerimg.png'
-interface navDataType { 
-  id:string,
-  name: string; 
-  to: string; 
-  icon:React.ForwardRefExoticComponent<Omit<LucideProps, "ref">>, 
-  description?: string;
-  dropdown?:navDataType[]
-}
-const navData: navDataType[]= [
-  { id: "1" , name: "Home", to: "/", icon: Home },
-  { id: "2" , name: "About", to: "/about", icon: Info },
-  { id: "3", name: "Services", 
-    to: "/services", 
-    icon: Settings,
-    description:"Partner with us to create powerful, scalable solutions that drive growth and efficiency in your organization.",
-    dropdown: [
-      { id:"31", name: "Custom Application", to: "/services/customapplication" , icon: AppWindow,description:"In today's competitive landscape, businesses need innovative solutions to stay ahead"},
-      { id:"32", name: "SaaS", to: "/services/saas", icon: MonitorPause, description:"Access Anytime, Anywhere: Scalable SaaS Solutions for Modern Businesses." },
-      { id:"33", name: "Support's", to: "/services/supports",icon: Code , description:"Always Here for You: Reliable Support Solutions to Keep Your Business Running Smoothly."},
-    ],
-  },
-  {
-    id:"4",
-    name: "Industries",
-    to: "/industries",
-    icon: Briefcase,
-    description: "Drive growth and efficiency with our specialized software designed to meet the unique needs of your industry." ,
-    dropdown: [
-      { id:"41",name: "E-Commerce", to: "/industries/ecommerce" ,icon: Store , description: "Transforming Retail: Seamless Shopping Experiences Tailored for Every Customer."},
-      { id:"42",name: "Healthcare", to: "/industries/healthcare" ,icon: Activity, description:"Streamlining Healthcare Management with Cutting-Edge Technology and Insights."},
-      { id:"43",name: "Fitness", to: "/industries/fitness",icon: Cross,description:"Transforming Lives Through Technology: Innovative Fitness Solutions for a Healthier You." },
-      { id:"44",name: "ERP", to: "/industries/erp",icon: ShoppingBag , description: "Integrate, Automate, Elevate: Your All-in-One ERP Solution for Business Efficiency."},
-      { id:"44",name: "Education", to: "/industries/education",icon: ShoppingBag , description: "Integrate, Automate, Elevate: Your All-in-One ERP Solution for Business Efficiency."},
-      { id:"44",name: "Transportation", to: "/industries/transportation",icon: ShoppingBag , description: "Integrate, Automate, Elevate: Your All-in-One ERP Solution for Business Efficiency."},
-      { id:"44",name: "Banking & Finance", to: "/industries/banking",icon: ShoppingBag , description: "Integrate, Automate, Elevate: Your All-in-One ERP Solution for Business Efficiency."},
-      { id:"44",name: "Telecommunication", to: "/industries/telecommunication",icon: ShoppingBag , description: "Enabling communication service providers with software for network management, billing, and customer service."},
-      { id:"45",name: "Others", to: "/industries/others",icon: Building,description: "Your Partner in Progress: Custom Software Services to Meet Every Business Need." },
-    ],
-  },
-  { id:"5",name: "Blogs", to: "/blogs", icon: Cpu },
-  { id:"6",name: "Careers", to: "/jobs", icon: DatabaseBackup },
-]
+import { navData } from "~/routeConstant"
+
 export function Navbar() {
   const [isScrolled, setIsScrolled] = React.useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
   const [openSubmenus, setOpenSubmenus] = React.useState<Record<string, boolean>>({})
   const [activeLink, setActiveLink] = React.useState<string>("/")
-  const mobileMenuRef = React.useRef<HTMLDivElement>(null)
+  const mobileMenuRef = React.useRef<HTMLDivElement>(null);
 
+  const location = useLocation().pathname
   // Handle scroll effect
   React.useEffect(() => {
     const handleScroll = () => {
@@ -78,10 +39,10 @@ export function Navbar() {
   // Set active link based on current path
   React.useEffect(() => {
     if (typeof window !== "undefined") {
-      setActiveLink(window.location.pathname)
+      setActiveLink(location)
     }
-  }, [])
-
+  }, [location])
+  
   // Toggle submenu without closing the sheet
   const toggleSubmenu = (name: string) => {
     setOpenSubmenus((prev) => ({
@@ -105,9 +66,9 @@ export function Navbar() {
           navData?.map(menu => {
             if(menu.dropdown){
               return (<NavigationMenuItem key={menu.id}>
-                <NavigationMenuTrigger>{menu.name}</NavigationMenuTrigger>
+                <NavigationMenuTrigger className={`${(menu.to == activeLink || menu.to == `/${activeLink.split("/")?.[1]}`) ? 'text-white bg-blue-500 opacity-75' : ""}`}>{menu.name}</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className={`grid gap-3 p-4 ${(menu.name).toLocaleLowerCase() == 'services' ? " md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]" : "md:w-[500px] lg:w-[650px]  lg:grid-cols-3"}`}>
+                  <ul className={`grid gap-3 p-2 ${(menu.name).toLocaleLowerCase() == 'services' ? " md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]" : "md:w-[500px] lg:w-[650px]  lg:grid-cols-3"}`}>
                   <li className="row-span-3 rounded-lg relative" style={{ backgroundColor: 'rgba(255, 255, 255, 0.4)' }}>
                     <div
                       style={{
@@ -120,7 +81,7 @@ export function Navbar() {
                       <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-85 text-white">
                         <NavigationMenuLink asChild>
                           <Link
-                            className="flex h-full w-full select-none flex-col justify-end rounded-md p-6 no-underline outline-none focus:shadow-md"
+                            className={`flex h-full w-full select-none flex-col justify-end rounded-md p-6 no-underline outline-none focus:shadow-md ${menu.to == activeLink ? 'text-white bg-blue-500 opacity-75' : ""}`}
                             to={menu.to}
                           >
                             <div className="mb-2 mt-4 text-lg font-medium">
@@ -136,7 +97,7 @@ export function Navbar() {
                   </li>
                     {
                       menu?.dropdown?.map( submenu =>{
-                        return (<ListItem key={submenu.id} href={submenu.to} title={submenu.name}>
+                        return (<ListItem key={submenu.id} href={submenu.to} title={submenu.name} defaultValue={activeLink}>
                           {submenu.description}
                           </ListItem>)
                       })
@@ -147,7 +108,7 @@ export function Navbar() {
             }
             return(<NavigationMenuItem key={menu.id}>
               <Link to={menu.to}>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                <NavigationMenuLink className={`${navigationMenuTriggerStyle()} ${menu.to == activeLink ? 'text-white bg-blue-500 opacity-75' : ""}`}>
                   {menu.name}
                 </NavigationMenuLink>
               </Link>
@@ -236,7 +197,7 @@ export function Navbar() {
                                       to={item.to}
                                       className={`flex py-2 px-3 text-sm rounded-md transition-colors ${
                                         activeLink === item.to
-                                          ? "bg-slate-50 text-slate-800 font-medium"
+                                          ? "text-white bg-blue-500 opacity-75"
                                           : "text-slate-600 hover:bg-gray-100 hover:text-slate-800"
                                       }`}
                                       onClick={() => handleLinkClick(item.to)}
@@ -253,7 +214,7 @@ export function Navbar() {
                               to={link.to}
                               className={`flex items-center px-4 py-3 font-medium transition-colors ${
                                 activeLink === link.to
-                                  ? "bg-gray-50 text-slate-800"
+                                  ? "text-white bg-blue-500 opacity-75"
                                   : "text-slate-800 hover:bg-gray-50 hover:text-slate-800"
                               }`}
                               onClick={() => handleLinkClick(link.to)}
@@ -292,7 +253,7 @@ const ListItem = React.forwardRef<
 >(({ className, title, children, ...props }, ref) => {
   return (
     <li>
-      <NavigationMenuLink asChild>
+      <NavigationMenuLink asChild className={`${props.href == props.defaultValue ? 'bg-accent text-blue-700 font-semibold' : ""}`}>
         <a
           ref={ref}
           className={cn(

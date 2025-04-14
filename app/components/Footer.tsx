@@ -1,3 +1,4 @@
+import { Link } from "@remix-run/react"
 import { Facebook, Instagram, Linkedin, LinkedinIcon, Twitter} from "lucide-react"
 import { Separator } from "~/components/ui/separator"
 
@@ -79,29 +80,29 @@ export function Footer() {
 
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-sm hover:text-blue-400 transition-colors">
-                  Services
-                </a>
+                <Link to={'/'} className="text-sm hover:text-blue-400 transition-colors">
+                  Home
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm hover:text-blue-400 transition-colors">
-                  Contact us
-                </a>
+                <Link to={'/about'} className="text-sm hover:text-blue-400 transition-colors">
+                  About
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm hover:text-blue-400 transition-colors">
+                <Link to={'/services'} className="text-sm hover:text-blue-400 transition-colors">
+                  Service's
+                </Link>
+              </li>
+              <li>
+                <Link to={'/industries'} className="text-sm hover:text-blue-400 transition-colors">
                   Industries
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm hover:text-blue-400 transition-colors">
-                  Healthcare
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm hover:text-blue-400 transition-colors">
-                  E-commerce
-                </a>
+                <Link to={'/blogs'} className="text-sm hover:text-blue-400 transition-colors">
+                  Blog's
+                </Link>
               </li>
             </ul>
           </div>
