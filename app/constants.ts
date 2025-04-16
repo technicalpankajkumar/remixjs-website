@@ -1021,24 +1021,24 @@ export const testimonials = [
   {
     quote:
       "YGTW Technology transformed our business operations with their innovative tech solutions. Their team's expertise and dedication made all the difference.",
-    author: "Sarah Johnson",
-    position: "CEO, TechVision Inc.",
-    avatar: "/assets/svg/telecom_customer.svg",
+    author: "Pankaj Kumar",
+    position: "CEO/MD, youGoToWeb Private Limited",
+    avatar: "/assets/svg/telecom_customer3.svg",
     id:"1"
   },
   {
     quote:
       "Working with YGTW  Technology has been a game-changer for our company. Their strategic approach and cutting-edge solutions helped us stay ahead of the competition.",
-    author: "Michael Chen",
-    position: "CTO, Global Innovations",
+    author: "Shailesh Verma",
+    position: "Software Developer, youGoToWeb Private Limited",
     avatar: "/assets/svg/telecom_customer2.svg",
     id:"2"
   },
   {
     quote:
       "The team at YGTW  Technology provided exceptional service and delivered results beyond our expectations. Their insights into our industry were invaluable.",
-    author: "Emily Rodriguez",
-    position: "Operations Director, NextGen Solutions",
+    author: "Kuldeep Namdev",
+    position: "Software Developer, youGoToWeb Private Limited",
     avatar: "/assets/svg/telecom_customer3.svg",
     id:"3"
   },

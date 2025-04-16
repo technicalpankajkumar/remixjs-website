@@ -1,4 +1,4 @@
-import { Outlet, useLocation } from "@remix-run/react";
+import { Link, Outlet, useLocation } from "@remix-run/react";
 import { Activity, ArrowRightSquare, BookOpen, Dumbbell, ShoppingCart } from "lucide-react";
 import { Button } from "~/components/ui/button";
 import { bankAndFinanceIndustry, educationIndustory, erpIndustry, fitnessIndustry, healthIndustory, otherIndustry, telecomIndustry, transportationIndustry } from "~/constants";
@@ -29,7 +29,7 @@ const Index = () => {
                     </p></>
                 )}
                 <div className="flex gap-2 pt-2">
-                <Button className="h-7 py-2 text-sm" >Visit Now <ArrowRightSquare/></Button>
+                <Button className="h-7 py-2 text-sm"><Link to={'/industries/education'} >Visit Now</Link> <ArrowRightSquare/></Button>
                 </div>
                 </div>
                 <div className="p-4  w-full flex items-center justify-center shadow">
@@ -69,7 +69,7 @@ const Index = () => {
                     </p></>
                 )}
                 <div className="flex gap-2 pt-2">
-                <Button className="h-7 py-2 text-sm" >Visit Now <ArrowRightSquare/></Button>
+                <Button className="h-7 py-2 text-sm" ><Link to={'/industries/healthcare'} >Visit Now</Link> <ArrowRightSquare/></Button>
                 </div>
                 </div>
                 
@@ -91,7 +91,7 @@ const Index = () => {
                     </p></>
                 )}
                 <div className="flex gap-2 pt-2">
-                <Button className="h-7 py-2 text-sm" >Visit Now <ArrowRightSquare/></Button>
+                <Button className="h-7 py-2 text-sm" ><Link to={'/industries/fitness'} >Visit Now</Link> <ArrowRightSquare/></Button>
                 </div>
                 </div>
                 <div className="p-4  w-full flex items-center justify-center shadow">
@@ -126,7 +126,7 @@ const Index = () => {
                     </p></>
                 )}
                 <div className="flex gap-2 pt-2">
-                <Button className="h-7 py-2 text-sm" >Visit Now <ArrowRightSquare/></Button>
+                <Button className="h-7 py-2 text-sm" ><Link to={'/industries/banking'} >Visit Now</Link><ArrowRightSquare/></Button>
                 </div>
                 </div>
                 
@@ -148,7 +148,7 @@ const Index = () => {
                     </p></>
                 )}
                 <div className="flex gap-2 pt-2">
-                <Button className="h-7 py-2 text-sm" >Visit Now <ArrowRightSquare/></Button>
+                <Button className="h-7 py-2 text-sm" ><Link to={'/industries/ecommerce'} >Visit Now</Link><ArrowRightSquare/></Button>
                 </div>
                 </div>
                 <div className="p-4  w-full flex items-center justify-center shadow">
@@ -183,7 +183,7 @@ const Index = () => {
                     </p></>
                 )}
                 <div className="flex gap-2 pt-2">
-                <Button className="h-7 py-2 text-sm" >Visit Now <ArrowRightSquare/></Button>
+                <Button className="h-7 py-2 text-sm" ><Link to={'/industries/erp'} >Visit Now</Link><ArrowRightSquare/></Button>
                 </div>
                 </div>
                 
@@ -205,7 +205,7 @@ const Index = () => {
                     </p></>
                 )}
                 <div className="flex gap-2 pt-2">
-                <Button className="h-7 py-2 text-sm" >Visit Now <ArrowRightSquare/></Button>
+                <Button className="h-7 py-2 text-sm" ><Link to={'/industries/transportation'} >Visit Now</Link><ArrowRightSquare/></Button>
                 </div>
                 </div>
                 <div className="p-4  w-full flex items-center justify-center shadow">
@@ -240,7 +240,7 @@ const Index = () => {
                     </p></>
                 )}
                 <div className="flex gap-2 pt-2">
-                <Button className="h-7 py-2 text-sm" >Visit Now <ArrowRightSquare/></Button>
+                <Button className="h-7 py-2 text-sm" ><Link to={'/industries/telecommunication'} >Visit Now</Link><ArrowRightSquare/></Button>
                 </div>
                 </div>
                 
@@ -262,7 +262,7 @@ const Index = () => {
                     </p></>
                 )}
                 <div className="flex gap-2 pt-2">
-                <Button className="h-7 py-2 text-sm" >Visit Now <ArrowRightSquare/></Button>
+                <Button className="h-7 py-2 text-sm" ><Link to={'/industries/others'} >Visit Now</Link><ArrowRightSquare/></Button>
                 </div>
                 </div>
                 <div className="p-4  w-full flex items-center justify-center shadow">
